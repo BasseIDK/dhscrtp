@@ -95,7 +95,7 @@ local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
 -- Properties
 
 DaHoodGui.Name = "DaHoodGui"
-DaHoodGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DaHoodGui.Parent = game.ServerStorage
 DaHoodGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 DaHoodGui.ResetOnSpawn = false
 
@@ -773,7 +773,7 @@ UIAspectRatioConstraint_2.AspectRatio = 1.0003987550735474
 
 -- Scripts
 
-local function BNOE_fake_script() -- DaHoodGui.MainScript 
+local function COEW_fake_script() -- DaHoodGui.MainScript 
 	local script = Instance.new('LocalScript', DaHoodGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -794,6 +794,10 @@ local function BNOE_fake_script() -- DaHoodGui.MainScript
 	
 	TweenService:Create(MainFrame, TweenInfo.new(0.25), { Position = UDim2.fromScale(0.252, 0.157)}):Play()
 	TweenService:Create(MainFrame, TweenInfo.new(0.25), { Size = UDim2.fromScale(0.495, 0.685) }):Play()
+	
+	local Sound = Instance.new("Sound", script)
+	Sound.Name = "Click"
+	Sound.SoundId = "rbxassetid://6895079853"
 	
 	game.StarterGui:SetCore("SendNotification", {
 		Title = "Welcome!",
@@ -1287,4 +1291,4 @@ local function BNOE_fake_script() -- DaHoodGui.MainScript
 		end
 	end)
 end
-coroutine.wrap(BNOE_fake_script)()
+coroutine.wrap(COEW_fake_script)()
