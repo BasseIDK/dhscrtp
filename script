@@ -244,7 +244,7 @@ Text_3.BorderSizePixel = 0
 Text_3.Position = UDim2.new(0.0115649207, 0, 0.13554503, 0)
 Text_3.Size = UDim2.new(0.974942684, 0, 0.728910148, 0)
 Text_3.Font = Enum.Font.Arial
-Text_3.Text = "Super Speed"
+Text_3.Text = "Super Jump"
 Text_3.TextColor3 = Color3.new(1, 1, 1)
 Text_3.TextScaled = true
 Text_3.TextSize = 14
@@ -337,7 +337,7 @@ UICorner_14.Parent = OpenButton
 
 -- Scripts
 
-local function TTTFG_fake_script() -- DaHoodGui.MainScript 
+local function GLYTF_fake_script() -- DaHoodGui.MainScript 
 	local script = Instance.new('LocalScript', DaHoodGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -462,4 +462,4 @@ local function TTTFG_fake_script() -- DaHoodGui.MainScript
 		end
 	end)
 end
-coroutine.wrap(TTTFG_fake_script)()
+coroutine.wrap(GLYTF_fake_script)()
