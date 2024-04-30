@@ -41,31 +41,47 @@ local UICorner_12 = Instance.new("UICorner")
 local Text_4 = Instance.new("TextLabel")
 local Activate_3 = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
+local Fly = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local Text_5 = Instance.new("TextLabel")
+local Activate_4 = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
 local Target_2 = Instance.new("ScrollingFrame")
 local UIListLayout_4 = Instance.new("UIListLayout")
 local TargetName = Instance.new("Frame")
-local UICorner_14 = Instance.new("UICorner")
-local TextBox = Instance.new("TextBox")
-local UICorner_15 = Instance.new("UICorner")
-local TeleportTo = Instance.new("Frame")
 local UICorner_16 = Instance.new("UICorner")
-local Text_5 = Instance.new("TextLabel")
-local Activate_4 = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
 local UICorner_17 = Instance.new("UICorner")
-local HeadSit = Instance.new("Frame")
+local TeleportTo = Instance.new("Frame")
 local UICorner_18 = Instance.new("UICorner")
 local Text_6 = Instance.new("TextLabel")
 local Activate_5 = Instance.new("TextButton")
 local UICorner_19 = Instance.new("UICorner")
-local TitleFrame = Instance.new("Frame")
+local HeadSit = Instance.new("Frame")
 local UICorner_20 = Instance.new("UICorner")
-local Title = Instance.new("TextLabel")
+local Text_7 = Instance.new("TextLabel")
+local Activate_6 = Instance.new("TextButton")
 local UICorner_21 = Instance.new("UICorner")
-local CloseButton = Instance.new("TextButton")
+local TitleFrame = Instance.new("Frame")
 local UICorner_22 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UICorner_23 = Instance.new("UICorner")
+local CloseButton = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local OpenButton = Instance.new("TextButton")
-local UICorner_23 = Instance.new("UICorner")
+local UICorner_25 = Instance.new("UICorner")
+local FlyFrame = Instance.new("Frame")
+local UICorner_26 = Instance.new("UICorner")
+local Left = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local Down = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local Up = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local Right = Instance.new("TextButton")
+local UICorner_30 = Instance.new("UICorner")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
 
 -- Properties
 
@@ -354,6 +370,49 @@ Activate_3.TextWrapped = true
 UICorner_13.Parent = Activate_3
 UICorner_13.CornerRadius = UDim.new(0, 5)
 
+Fly.Name = "Fly"
+Fly.Parent = Main_2
+Fly.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Fly.BorderColor3 = Color3.new(0, 0, 0)
+Fly.BorderSizePixel = 0
+Fly.Size = UDim2.new(1, 0, 0.0500000007, 0)
+
+UICorner_14.Parent = Fly
+UICorner_14.CornerRadius = UDim.new(0, 5)
+
+Text_5.Name = "Text"
+Text_5.Parent = Fly
+Text_5.BackgroundColor3 = Color3.new(1, 1, 1)
+Text_5.BackgroundTransparency = 1
+Text_5.BorderColor3 = Color3.new(0, 0, 0)
+Text_5.BorderSizePixel = 0
+Text_5.Position = UDim2.new(0.0115649207, 0, 0.13554503, 0)
+Text_5.Size = UDim2.new(0.974942684, 0, 0.728910148, 0)
+Text_5.Font = Enum.Font.Arial
+Text_5.Text = "Fly"
+Text_5.TextColor3 = Color3.new(1, 1, 1)
+Text_5.TextScaled = true
+Text_5.TextSize = 14
+Text_5.TextWrapped = true
+Text_5.TextXAlignment = Enum.TextXAlignment.Left
+
+Activate_4.Name = "Activate"
+Activate_4.Parent = Fly
+Activate_4.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Activate_4.BorderColor3 = Color3.new(0, 0, 0)
+Activate_4.BorderSizePixel = 0
+Activate_4.Position = UDim2.new(0.919846356, 0, 0.136000142, 0)
+Activate_4.Size = UDim2.new(0.0671535805, 0, 0.728999972, 0)
+Activate_4.Font = Enum.Font.SourceSans
+Activate_4.Text = ""
+Activate_4.TextColor3 = Color3.new(0, 0, 0)
+Activate_4.TextScaled = true
+Activate_4.TextSize = 14
+Activate_4.TextWrapped = true
+
+UICorner_15.Parent = Activate_4
+UICorner_15.CornerRadius = UDim.new(0, 5)
+
 Target_2.Name = "Target"
 Target_2.Parent = FeaturesFrame
 Target_2.Active = true
@@ -377,8 +436,8 @@ TargetName.BorderColor3 = Color3.new(0, 0, 0)
 TargetName.BorderSizePixel = 0
 TargetName.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_14.Parent = TargetName
-UICorner_14.CornerRadius = UDim.new(0, 5)
+UICorner_16.Parent = TargetName
+UICorner_16.CornerRadius = UDim.new(0, 5)
 
 TextBox.Parent = TargetName
 TextBox.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
@@ -395,8 +454,8 @@ TextBox.TextScaled = true
 TextBox.TextSize = 14
 TextBox.TextWrapped = true
 
-UICorner_15.Parent = TextBox
-UICorner_15.CornerRadius = UDim.new(0, 5)
+UICorner_17.Parent = TextBox
+UICorner_17.CornerRadius = UDim.new(0, 5)
 
 TeleportTo.Name = "TeleportTo"
 TeleportTo.Parent = Target_2
@@ -405,54 +464,11 @@ TeleportTo.BorderColor3 = Color3.new(0, 0, 0)
 TeleportTo.BorderSizePixel = 0
 TeleportTo.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_16.Parent = TeleportTo
-UICorner_16.CornerRadius = UDim.new(0, 5)
-
-Text_5.Name = "Text"
-Text_5.Parent = TeleportTo
-Text_5.BackgroundColor3 = Color3.new(1, 1, 1)
-Text_5.BackgroundTransparency = 1
-Text_5.BorderColor3 = Color3.new(0, 0, 0)
-Text_5.BorderSizePixel = 0
-Text_5.Position = UDim2.new(0.0115649207, 0, 0.13554503, 0)
-Text_5.Size = UDim2.new(0.974942684, 0, 0.728910148, 0)
-Text_5.Font = Enum.Font.Arial
-Text_5.Text = "Teleport To"
-Text_5.TextColor3 = Color3.new(1, 1, 1)
-Text_5.TextScaled = true
-Text_5.TextSize = 14
-Text_5.TextWrapped = true
-Text_5.TextXAlignment = Enum.TextXAlignment.Left
-
-Activate_4.Name = "Activate"
-Activate_4.Parent = TeleportTo
-Activate_4.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
-Activate_4.BorderColor3 = Color3.new(0, 0, 0)
-Activate_4.BorderSizePixel = 0
-Activate_4.Position = UDim2.new(0.919846356, 0, 0.136000142, 0)
-Activate_4.Size = UDim2.new(0.0671535805, 0, 0.728999972, 0)
-Activate_4.Font = Enum.Font.SourceSans
-Activate_4.Text = ""
-Activate_4.TextColor3 = Color3.new(0, 0, 0)
-Activate_4.TextScaled = true
-Activate_4.TextSize = 14
-Activate_4.TextWrapped = true
-
-UICorner_17.Parent = Activate_4
-UICorner_17.CornerRadius = UDim.new(0, 5)
-
-HeadSit.Name = "HeadSit"
-HeadSit.Parent = Target_2
-HeadSit.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-HeadSit.BorderColor3 = Color3.new(0, 0, 0)
-HeadSit.BorderSizePixel = 0
-HeadSit.Size = UDim2.new(1, 0, 0.0500000007, 0)
-
-UICorner_18.Parent = HeadSit
+UICorner_18.Parent = TeleportTo
 UICorner_18.CornerRadius = UDim.new(0, 5)
 
 Text_6.Name = "Text"
-Text_6.Parent = HeadSit
+Text_6.Parent = TeleportTo
 Text_6.BackgroundColor3 = Color3.new(1, 1, 1)
 Text_6.BackgroundTransparency = 1
 Text_6.BorderColor3 = Color3.new(0, 0, 0)
@@ -460,7 +476,7 @@ Text_6.BorderSizePixel = 0
 Text_6.Position = UDim2.new(0.0115649207, 0, 0.13554503, 0)
 Text_6.Size = UDim2.new(0.974942684, 0, 0.728910148, 0)
 Text_6.Font = Enum.Font.Arial
-Text_6.Text = "Head Sit"
+Text_6.Text = "Teleport To"
 Text_6.TextColor3 = Color3.new(1, 1, 1)
 Text_6.TextScaled = true
 Text_6.TextSize = 14
@@ -468,7 +484,7 @@ Text_6.TextWrapped = true
 Text_6.TextXAlignment = Enum.TextXAlignment.Left
 
 Activate_5.Name = "Activate"
-Activate_5.Parent = HeadSit
+Activate_5.Parent = TeleportTo
 Activate_5.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
 Activate_5.BorderColor3 = Color3.new(0, 0, 0)
 Activate_5.BorderSizePixel = 0
@@ -484,6 +500,49 @@ Activate_5.TextWrapped = true
 UICorner_19.Parent = Activate_5
 UICorner_19.CornerRadius = UDim.new(0, 5)
 
+HeadSit.Name = "HeadSit"
+HeadSit.Parent = Target_2
+HeadSit.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+HeadSit.BorderColor3 = Color3.new(0, 0, 0)
+HeadSit.BorderSizePixel = 0
+HeadSit.Size = UDim2.new(1, 0, 0.0500000007, 0)
+
+UICorner_20.Parent = HeadSit
+UICorner_20.CornerRadius = UDim.new(0, 5)
+
+Text_7.Name = "Text"
+Text_7.Parent = HeadSit
+Text_7.BackgroundColor3 = Color3.new(1, 1, 1)
+Text_7.BackgroundTransparency = 1
+Text_7.BorderColor3 = Color3.new(0, 0, 0)
+Text_7.BorderSizePixel = 0
+Text_7.Position = UDim2.new(0.0115649207, 0, 0.13554503, 0)
+Text_7.Size = UDim2.new(0.974942684, 0, 0.728910148, 0)
+Text_7.Font = Enum.Font.Arial
+Text_7.Text = "Head Sit"
+Text_7.TextColor3 = Color3.new(1, 1, 1)
+Text_7.TextScaled = true
+Text_7.TextSize = 14
+Text_7.TextWrapped = true
+Text_7.TextXAlignment = Enum.TextXAlignment.Left
+
+Activate_6.Name = "Activate"
+Activate_6.Parent = HeadSit
+Activate_6.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Activate_6.BorderColor3 = Color3.new(0, 0, 0)
+Activate_6.BorderSizePixel = 0
+Activate_6.Position = UDim2.new(0.919846356, 0, 0.136000142, 0)
+Activate_6.Size = UDim2.new(0.0671535805, 0, 0.728999972, 0)
+Activate_6.Font = Enum.Font.SourceSans
+Activate_6.Text = ""
+Activate_6.TextColor3 = Color3.new(0, 0, 0)
+Activate_6.TextScaled = true
+Activate_6.TextSize = 14
+Activate_6.TextWrapped = true
+
+UICorner_21.Parent = Activate_6
+UICorner_21.CornerRadius = UDim.new(0, 5)
+
 TitleFrame.Name = "TitleFrame"
 TitleFrame.Parent = MainFrame
 TitleFrame.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
@@ -492,8 +551,8 @@ TitleFrame.BorderSizePixel = 0
 TitleFrame.Position = UDim2.new(0.00766877318, 0, 0.0127458936, 0)
 TitleFrame.Size = UDim2.new(0.980952203, 0, 0.0949868783, 0)
 
-UICorner_20.Parent = TitleFrame
-UICorner_20.CornerRadius = UDim.new(0, 5)
+UICorner_22.Parent = TitleFrame
+UICorner_22.CornerRadius = UDim.new(0, 5)
 
 Title.Name = "Title"
 Title.Parent = TitleFrame
@@ -510,8 +569,8 @@ Title.TextSize = 14
 Title.TextWrapped = true
 Title.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_21.Parent = Title
-UICorner_21.CornerRadius = UDim.new(0, 5)
+UICorner_23.Parent = Title
+UICorner_23.CornerRadius = UDim.new(0, 5)
 
 CloseButton.Name = "CloseButton"
 CloseButton.Parent = TitleFrame
@@ -527,8 +586,8 @@ CloseButton.TextScaled = true
 CloseButton.TextSize = 14
 CloseButton.TextWrapped = true
 
-UICorner_22.Parent = CloseButton
-UICorner_22.CornerRadius = UDim.new(0, 5)
+UICorner_24.Parent = CloseButton
+UICorner_24.CornerRadius = UDim.new(0, 5)
 
 UIAspectRatioConstraint.Parent = MainFrame
 UIAspectRatioConstraint.AspectRatio = 1.383912205696106
@@ -549,11 +608,89 @@ OpenButton.TextScaled = true
 OpenButton.TextSize = 14
 OpenButton.TextWrapped = true
 
-UICorner_23.Parent = OpenButton
+UICorner_25.Parent = OpenButton
+
+FlyFrame.Name = "FlyFrame"
+FlyFrame.Parent = DaHoodGui
+FlyFrame.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+FlyFrame.BorderColor3 = Color3.new(0, 0, 0)
+FlyFrame.BorderSizePixel = 0
+FlyFrame.Position = UDim2.new(0.0816873759, 0, 0.527318299, 0)
+FlyFrame.Size = UDim2.new(0.164094195, 0, 0.314285725, 0)
+FlyFrame.Visible = false
+
+UICorner_26.Parent = FlyFrame
+
+Left.Name = "Left"
+Left.Parent = FlyFrame
+Left.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Left.BorderColor3 = Color3.new(0, 0, 0)
+Left.BorderSizePixel = 0
+Left.Position = UDim2.new(-0.00398552977, 0, 0.338915378, 0)
+Left.Size = UDim2.new(0.318852097, 0, 0.318979263, 0)
+Left.Font = Enum.Font.Arial
+Left.Text = "←"
+Left.TextColor3 = Color3.new(1, 1, 1)
+Left.TextScaled = true
+Left.TextSize = 14
+Left.TextWrapped = true
+
+UICorner_27.Parent = Left
+
+Down.Name = "Down"
+Down.Parent = FlyFrame
+Down.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Down.BorderColor3 = Color3.new(0, 0, 0)
+Down.BorderSizePixel = 0
+Down.Position = UDim2.new(0.338780493, 0, 0.677830815, 0)
+Down.Size = UDim2.new(0.318852097, 0, 0.318979263, 0)
+Down.Font = Enum.Font.Arial
+Down.Text = "↓"
+Down.TextColor3 = Color3.new(1, 1, 1)
+Down.TextScaled = true
+Down.TextSize = 14
+Down.TextWrapped = true
+
+UICorner_28.Parent = Down
+
+Up.Name = "Up"
+Up.Parent = FlyFrame
+Up.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Up.BorderColor3 = Color3.new(0, 0, 0)
+Up.BorderSizePixel = 0
+Up.Position = UDim2.new(0.338780493, 0, -9.12607021e-08, 0)
+Up.Size = UDim2.new(0.318852097, 0, 0.318979263, 0)
+Up.Font = Enum.Font.Arial
+Up.Text = "↑"
+Up.TextColor3 = Color3.new(1, 1, 1)
+Up.TextScaled = true
+Up.TextSize = 14
+Up.TextWrapped = true
+
+UICorner_29.Parent = Up
+
+Right.Name = "Right"
+Right.Parent = FlyFrame
+Right.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Right.BorderColor3 = Color3.new(0, 0, 0)
+Right.BorderSizePixel = 0
+Right.Position = UDim2.new(0.677560866, 0, 0.338915378, 0)
+Right.Size = UDim2.new(0.318852097, 0, 0.318979263, 0)
+Right.Font = Enum.Font.Arial
+Right.Text = "→"
+Right.TextColor3 = Color3.new(1, 1, 1)
+Right.TextScaled = true
+Right.TextSize = 14
+Right.TextWrapped = true
+
+UICorner_30.Parent = Right
+
+UIAspectRatioConstraint_2.Parent = FlyFrame
+UIAspectRatioConstraint_2.AspectRatio = 1.0003987550735474
 
 -- Scripts
 
-local function TEGUZM_fake_script() -- DaHoodGui.MainScript 
+local function AKZWSY_fake_script() -- DaHoodGui.MainScript 
 	local script = Instance.new('LocalScript', DaHoodGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -577,7 +714,8 @@ local function TEGUZM_fake_script() -- DaHoodGui.MainScript
 			SuperSpeed = false,
 			SuperJump = false,
 			HeadSit = false,
-			AntiSlow = false
+			AntiSlow = false,
+			Fly = false
 		}
 	}
 	
@@ -693,6 +831,23 @@ local function TEGUZM_fake_script() -- DaHoodGui.MainScript
 								PageFrame.Activate.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 							end
 						end)
+					elseif PageFrame.Name == "Fly" then
+						PageFrame:WaitForChild("Activate").MouseButton1Click:Connect(function()
+							if ButtonsActivated.Character.Fly == false then
+								ButtonsActivated.Character.Fly = true
+								PageFrame.Activate.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+								game.Players.LocalPlayer.Character.Animate.Disabled = true
+								local bv = Instance.new("BodyVelocity", game.Players.LocalPlayer.Character.PrimaryPart)
+								bv.MaxForce = Vector3.new(math.huge,math.huge,math.huge)
+								bv.Velocity = Vector3.new(0,0,0)
+								bv.Name = "FlightForce"
+							else
+								ButtonsActivated.Character.Fly = false
+								PageFrame.Activate.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+								game.Players.LocalPlayer.Character.Animate.Disabled = false
+								game.Players.LocalPlayer.Character.PrimaryPart:FindFirstChild("FlightForce"):Destroy()
+							end
+						end)
 					end
 				end
 			end
@@ -718,6 +873,68 @@ local function TEGUZM_fake_script() -- DaHoodGui.MainScript
 		end
 	end)
 	
+	local uis = game:GetService("UserInputService")
+	
+	local wPressed = false
+	local sPressed = false
+	local aPressed = false
+	local dPressed = false
+	
+	if uis.LastInputTypeChanged ~= Enum.UserInputType.Touch then
+		uis.InputBegan:Connect(function(key, chat)
+			if chat then return end
+	
+			if key.KeyCode == Enum.KeyCode.W then
+				wPressed = true
+			elseif key.KeyCode == Enum.KeyCode.S then
+				sPressed = true
+			elseif key.KeyCode == Enum.KeyCode.A then
+				aPressed = true
+			elseif key.KeyCode == Enum.KeyCode.D then
+				dPressed = true
+			end
+		end)
+	
+		uis.InputEnded:Connect(function(key)	
+			if key.KeyCode == Enum.KeyCode.W then
+				wPressed = false
+			elseif key.KeyCode == Enum.KeyCode.S then
+				sPressed = false
+			elseif key.KeyCode == Enum.KeyCode.A then
+				aPressed = false
+			elseif key.KeyCode == Enum.KeyCode.D then
+				dPressed = false
+			end
+		end)
+	end
+	
+	local FlyFrame = ScreenGui.FlyFrame
+	
+	FlyFrame.Up.InputBegan:Connect(function(Input)
+		wPressed = true
+	end)
+	FlyFrame.Up.InputEnded:Connect(function(Input)
+		wPressed = false
+	end)
+	FlyFrame.Left.InputBegan:Connect(function(Input)
+		aPressed = true
+	end)
+	FlyFrame.Left.InputEnded:Connect(function(Input)
+		aPressed = false
+	end)
+	FlyFrame.Down.InputBegan:Connect(function(Input)
+		sPressed = true
+	end)
+	FlyFrame.Down.InputEnded:Connect(function(Input)
+		sPressed = false
+	end)
+	FlyFrame.Right.InputBegan:Connect(function(Input)
+		dPressed = true
+	end)
+	FlyFrame.Right.InputEnded:Connect(function(Input)
+		dPressed = false
+	end)
+	
 	game:GetService("RunService").Heartbeat:Connect(function()
 		if ButtonsActivated.Character.HeadSit == true then
 			game.Players.LocalPlayer.Character.Humanoid.Sit = true
@@ -732,6 +949,47 @@ local function TEGUZM_fake_script() -- DaHoodGui.MainScript
 				game.Players.LocalPlayer.Character.BodyEffects.Movement.NoJumping:Destroy() 
 			end
 		end
+		
+		local flyin = false
+		local root = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local cam = game.Workspace.CurrentCamera
+		root.Anchored = false
+		
+		FlyFrame.Visible = false
+		
+		if ButtonsActivated.Character.Fly == true then
+			game.Players.LocalPlayer.Character.PrimaryPart:FindFirstChild("FlightForce").Velocity = Vector3.new(0,0,0)
+			
+			if uis:GetLastInputType() == Enum.UserInputType.Touch then
+				FlyFrame.Visible = true
+			end
+			
+			root.CFrame = CFrame.new(root.CFrame.p, root.CFrame.p + Vector3.new(cam.CFrame.LookVector.X, cam.CFrame.LookVector.Y, cam.CFrame.LookVector.Z))
+			
+			if wPressed then
+				game.Players.LocalPlayer.Character.PrimaryPart:FindFirstChild("FlightForce").Velocity = workspace.CurrentCamera.CFrame.LookVector * 100
+				flyin = true
+			end
+			if sPressed then
+				game.Players.LocalPlayer.Character.PrimaryPart:FindFirstChild("FlightForce").Velocity = workspace.CurrentCamera.CFrame.LookVector * -100
+				flyin = true
+			end
+			if aPressed then
+				game.Players.LocalPlayer.Character.PrimaryPart:FindFirstChild("FlightForce").Velocity = workspace.CurrentCamera.CFrame.RightVector * -100
+				flyin = true
+			end
+			if dPressed then
+				game.Players.LocalPlayer.Character.PrimaryPart:FindFirstChild("FlightForce").Velocity = workspace.CurrentCamera.CFrame.RightVector * 100
+				flyin = true
+			end
+		end
+		if flyin == true then
+			root.Anchored = false
+		else
+			if ButtonsActivated.Character.Fly == true then
+				root.Anchored = true
+			end
+		end
 	end)
 end
-coroutine.wrap(TEGUZM_fake_script)()
+coroutine.wrap(AKZWSY_fake_script)()
