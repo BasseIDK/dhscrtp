@@ -47,15 +47,20 @@ local UICorner_14 = Instance.new("UICorner")
 local Text_4 = Instance.new("TextLabel")
 local Activate_3 = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
-local TitleFrame = Instance.new("Frame")
+local HeadSit = Instance.new("Frame")
 local UICorner_16 = Instance.new("UICorner")
-local Title = Instance.new("TextLabel")
+local Text_5 = Instance.new("TextLabel")
+local Activate_4 = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
-local CloseButton = Instance.new("TextButton")
+local TitleFrame = Instance.new("Frame")
 local UICorner_18 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UICorner_19 = Instance.new("UICorner")
+local CloseButton = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local OpenButton = Instance.new("TextButton")
-local UICorner_19 = Instance.new("UICorner")
+local UICorner_21 = Instance.new("UICorner")
 
 -- Properties
 
@@ -388,6 +393,49 @@ Activate_3.TextWrapped = true
 UICorner_15.Parent = Activate_3
 UICorner_15.CornerRadius = UDim.new(0, 5)
 
+HeadSit.Name = "HeadSit"
+HeadSit.Parent = Target_2
+HeadSit.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+HeadSit.BorderColor3 = Color3.new(0, 0, 0)
+HeadSit.BorderSizePixel = 0
+HeadSit.Size = UDim2.new(1, 0, 0.0500000007, 0)
+
+UICorner_16.Parent = HeadSit
+UICorner_16.CornerRadius = UDim.new(0, 5)
+
+Text_5.Name = "Text"
+Text_5.Parent = HeadSit
+Text_5.BackgroundColor3 = Color3.new(1, 1, 1)
+Text_5.BackgroundTransparency = 1
+Text_5.BorderColor3 = Color3.new(0, 0, 0)
+Text_5.BorderSizePixel = 0
+Text_5.Position = UDim2.new(0.0115649207, 0, 0.13554503, 0)
+Text_5.Size = UDim2.new(0.974942684, 0, 0.728910148, 0)
+Text_5.Font = Enum.Font.Arial
+Text_5.Text = "Head Sit"
+Text_5.TextColor3 = Color3.new(1, 1, 1)
+Text_5.TextScaled = true
+Text_5.TextSize = 14
+Text_5.TextWrapped = true
+Text_5.TextXAlignment = Enum.TextXAlignment.Left
+
+Activate_4.Name = "Activate"
+Activate_4.Parent = HeadSit
+Activate_4.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Activate_4.BorderColor3 = Color3.new(0, 0, 0)
+Activate_4.BorderSizePixel = 0
+Activate_4.Position = UDim2.new(0.919846356, 0, 0.136000142, 0)
+Activate_4.Size = UDim2.new(0.0671535805, 0, 0.728999972, 0)
+Activate_4.Font = Enum.Font.SourceSans
+Activate_4.Text = ""
+Activate_4.TextColor3 = Color3.new(0, 0, 0)
+Activate_4.TextScaled = true
+Activate_4.TextSize = 14
+Activate_4.TextWrapped = true
+
+UICorner_17.Parent = Activate_4
+UICorner_17.CornerRadius = UDim.new(0, 5)
+
 TitleFrame.Name = "TitleFrame"
 TitleFrame.Parent = MainFrame
 TitleFrame.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
@@ -396,8 +444,8 @@ TitleFrame.BorderSizePixel = 0
 TitleFrame.Position = UDim2.new(0.00766877318, 0, 0.0127458936, 0)
 TitleFrame.Size = UDim2.new(0.980952203, 0, 0.0949868783, 0)
 
-UICorner_16.Parent = TitleFrame
-UICorner_16.CornerRadius = UDim.new(0, 5)
+UICorner_18.Parent = TitleFrame
+UICorner_18.CornerRadius = UDim.new(0, 5)
 
 Title.Name = "Title"
 Title.Parent = TitleFrame
@@ -414,8 +462,8 @@ Title.TextSize = 14
 Title.TextWrapped = true
 Title.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_17.Parent = Title
-UICorner_17.CornerRadius = UDim.new(0, 5)
+UICorner_19.Parent = Title
+UICorner_19.CornerRadius = UDim.new(0, 5)
 
 CloseButton.Name = "CloseButton"
 CloseButton.Parent = TitleFrame
@@ -431,8 +479,8 @@ CloseButton.TextScaled = true
 CloseButton.TextSize = 14
 CloseButton.TextWrapped = true
 
-UICorner_18.Parent = CloseButton
-UICorner_18.CornerRadius = UDim.new(0, 5)
+UICorner_20.Parent = CloseButton
+UICorner_20.CornerRadius = UDim.new(0, 5)
 
 UIAspectRatioConstraint.Parent = MainFrame
 UIAspectRatioConstraint.AspectRatio = 1.383912205696106
@@ -453,11 +501,11 @@ OpenButton.TextScaled = true
 OpenButton.TextSize = 14
 OpenButton.TextWrapped = true
 
-UICorner_19.Parent = OpenButton
+UICorner_21.Parent = OpenButton
 
 -- Scripts
 
-local function HQDIPLC_fake_script() -- DaHoodGui.MainScript 
+local function TNMRJG_fake_script() -- DaHoodGui.MainScript 
 	local script = Instance.new('LocalScript', DaHoodGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -479,7 +527,8 @@ local function HQDIPLC_fake_script() -- DaHoodGui.MainScript
 	local ButtonsActivated = {
 		["Character"] = {
 			SuperSpeed = false,
-			SuperJump = false
+			SuperJump = false,
+			HeadSit = false
 		}
 	}
 	
@@ -575,6 +624,14 @@ local function HQDIPLC_fake_script() -- DaHoodGui.MainScript
 								end
 							end
 						end)
+					elseif PageFrame.Name == "HeadSit" then
+						PageFrame:WaitForChild("Activate").MouseButton1Click:Connect(function()
+							if ButtonsActivated.Character.HeadSit == false then
+								ButtonsActivated.Character.HeadSit = true
+							else
+								ButtonsActivated.Character.HeadSit = false
+							end
+						end)
 					end
 				end
 			end
@@ -599,5 +656,12 @@ local function HQDIPLC_fake_script() -- DaHoodGui.MainScript
 			Instance.new("IntValue", game.Players.LocalPlayer.Character.BodyEffects.Movement).Name = "HighJump"
 		end
 	end)
+	
+	game:GetService("RunService").Heartbeat:Connect(function()
+		if ButtonsActivated.Character.HeadSit == true then
+			game.Players.LocalPlayer.Character.Humanoid.Sit = true
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.Head.CFrame
+		end
+	end)
 end
-coroutine.wrap(HQDIPLC_fake_script)()
+coroutine.wrap(TNMRJG_fake_script)()
