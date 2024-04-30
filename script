@@ -16,71 +16,80 @@ local Main = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local Target = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
+local ESP = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local FeaturesFrame = Instance.new("Frame")
 local UICorner_6 = Instance.new("UICorner")
+local FeaturesFrame = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
 local Home_2 = Instance.new("ScrollingFrame")
 local UIListLayout_2 = Instance.new("UIListLayout")
 local Creator = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
 local Text = Instance.new("TextLabel")
 local Main_2 = Instance.new("ScrollingFrame")
 local UIListLayout_3 = Instance.new("UIListLayout")
 local SuperSpeed = Instance.new("Frame")
-local UICorner_8 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 local Text_2 = Instance.new("TextLabel")
 local Activate = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
-local SuperJump = Instance.new("Frame")
 local UICorner_10 = Instance.new("UICorner")
+local SuperJump = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
 local Text_3 = Instance.new("TextLabel")
 local Activate_2 = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
-local AntiSlow = Instance.new("Frame")
 local UICorner_12 = Instance.new("UICorner")
+local AntiSlow = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
 local Text_4 = Instance.new("TextLabel")
 local Activate_3 = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
-local Fly = Instance.new("Frame")
 local UICorner_14 = Instance.new("UICorner")
+local Fly = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
 local Text_5 = Instance.new("TextLabel")
 local Activate_4 = Instance.new("TextButton")
-local UICorner_15 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
 local Target_2 = Instance.new("ScrollingFrame")
 local UIListLayout_4 = Instance.new("UIListLayout")
 local TargetName = Instance.new("Frame")
-local UICorner_16 = Instance.new("UICorner")
-local TextBox = Instance.new("TextBox")
 local UICorner_17 = Instance.new("UICorner")
-local TeleportTo = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
 local UICorner_18 = Instance.new("UICorner")
+local TeleportTo = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
 local Text_6 = Instance.new("TextLabel")
 local Activate_5 = Instance.new("TextButton")
-local UICorner_19 = Instance.new("UICorner")
-local HeadSit = Instance.new("Frame")
 local UICorner_20 = Instance.new("UICorner")
+local HeadSit = Instance.new("Frame")
+local UICorner_21 = Instance.new("UICorner")
 local Text_7 = Instance.new("TextLabel")
 local Activate_6 = Instance.new("TextButton")
-local UICorner_21 = Instance.new("UICorner")
-local TitleFrame = Instance.new("Frame")
 local UICorner_22 = Instance.new("UICorner")
-local Title = Instance.new("TextLabel")
+local ESP_2 = Instance.new("ScrollingFrame")
+local UIListLayout_5 = Instance.new("UIListLayout")
+local ESP_3 = Instance.new("Frame")
 local UICorner_23 = Instance.new("UICorner")
-local CloseButton = Instance.new("TextButton")
+local Text_8 = Instance.new("TextLabel")
+local Activate_7 = Instance.new("TextButton")
 local UICorner_24 = Instance.new("UICorner")
+local TitleFrame = Instance.new("Frame")
+local UICorner_25 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UICorner_26 = Instance.new("UICorner")
+local CloseButton = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local OpenButton = Instance.new("TextButton")
-local UICorner_25 = Instance.new("UICorner")
-local FlyFrame = Instance.new("Frame")
-local UICorner_26 = Instance.new("UICorner")
-local Left = Instance.new("TextButton")
-local UICorner_27 = Instance.new("UICorner")
-local Down = Instance.new("TextButton")
 local UICorner_28 = Instance.new("UICorner")
-local Up = Instance.new("TextButton")
+local FlyFrame = Instance.new("Frame")
 local UICorner_29 = Instance.new("UICorner")
-local Right = Instance.new("TextButton")
+local Left = Instance.new("TextButton")
 local UICorner_30 = Instance.new("UICorner")
+local Down = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local Up = Instance.new("TextButton")
+local UICorner_32 = Instance.new("UICorner")
+local Right = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
 local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
 
 -- Properties
@@ -95,8 +104,7 @@ MainFrame.Parent = DaHoodGui
 MainFrame.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
 MainFrame.BorderColor3 = Color3.new(0, 0, 0)
 MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.251798481, 0, 0.156641528, 0)
-MainFrame.Size = UDim2.new(0.495094836, 0, 0.685463667, 0)
+MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 
 UICorner.Parent = MainFrame
 
@@ -171,8 +179,24 @@ Target.TextWrapped = true
 UICorner_4.Parent = Target
 UICorner_4.CornerRadius = UDim.new(0, 5)
 
-UICorner_5.Parent = PagesFrame
+ESP.Name = "ESP"
+ESP.Parent = Pages
+ESP.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+ESP.BorderColor3 = Color3.new(0, 0, 0)
+ESP.BorderSizePixel = 0
+ESP.Size = UDim2.new(1, 0, 0.0500000007, 0)
+ESP.Font = Enum.Font.Arial
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.new(1, 1, 1)
+ESP.TextScaled = true
+ESP.TextSize = 14
+ESP.TextWrapped = true
+
+UICorner_5.Parent = ESP
 UICorner_5.CornerRadius = UDim.new(0, 5)
+
+UICorner_6.Parent = PagesFrame
+UICorner_6.CornerRadius = UDim.new(0, 5)
 
 FeaturesFrame.Name = "FeaturesFrame"
 FeaturesFrame.Parent = MainFrame
@@ -182,8 +206,8 @@ FeaturesFrame.BorderSizePixel = 0
 FeaturesFrame.Position = UDim2.new(0.28738904, 0, 0.120564774, 0)
 FeaturesFrame.Size = UDim2.new(0.701231897, 0, 0.86664325, 0)
 
-UICorner_6.Parent = FeaturesFrame
-UICorner_6.CornerRadius = UDim.new(0, 5)
+UICorner_7.Parent = FeaturesFrame
+UICorner_7.CornerRadius = UDim.new(0, 5)
 
 Home_2.Name = "Home"
 Home_2.Parent = FeaturesFrame
@@ -207,8 +231,8 @@ Creator.BorderColor3 = Color3.new(0, 0, 0)
 Creator.BorderSizePixel = 0
 Creator.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_7.Parent = Creator
-UICorner_7.CornerRadius = UDim.new(0, 5)
+UICorner_8.Parent = Creator
+UICorner_8.CornerRadius = UDim.new(0, 5)
 
 Text.Name = "Text"
 Text.Parent = Creator
@@ -248,8 +272,8 @@ SuperSpeed.BorderColor3 = Color3.new(0, 0, 0)
 SuperSpeed.BorderSizePixel = 0
 SuperSpeed.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_8.Parent = SuperSpeed
-UICorner_8.CornerRadius = UDim.new(0, 5)
+UICorner_9.Parent = SuperSpeed
+UICorner_9.CornerRadius = UDim.new(0, 5)
 
 Text_2.Name = "Text"
 Text_2.Parent = SuperSpeed
@@ -281,8 +305,8 @@ Activate.TextScaled = true
 Activate.TextSize = 14
 Activate.TextWrapped = true
 
-UICorner_9.Parent = Activate
-UICorner_9.CornerRadius = UDim.new(0, 5)
+UICorner_10.Parent = Activate
+UICorner_10.CornerRadius = UDim.new(0, 5)
 
 SuperJump.Name = "SuperJump"
 SuperJump.Parent = Main_2
@@ -291,8 +315,8 @@ SuperJump.BorderColor3 = Color3.new(0, 0, 0)
 SuperJump.BorderSizePixel = 0
 SuperJump.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_10.Parent = SuperJump
-UICorner_10.CornerRadius = UDim.new(0, 5)
+UICorner_11.Parent = SuperJump
+UICorner_11.CornerRadius = UDim.new(0, 5)
 
 Text_3.Name = "Text"
 Text_3.Parent = SuperJump
@@ -324,8 +348,8 @@ Activate_2.TextScaled = true
 Activate_2.TextSize = 14
 Activate_2.TextWrapped = true
 
-UICorner_11.Parent = Activate_2
-UICorner_11.CornerRadius = UDim.new(0, 5)
+UICorner_12.Parent = Activate_2
+UICorner_12.CornerRadius = UDim.new(0, 5)
 
 AntiSlow.Name = "AntiSlow"
 AntiSlow.Parent = Main_2
@@ -334,8 +358,8 @@ AntiSlow.BorderColor3 = Color3.new(0, 0, 0)
 AntiSlow.BorderSizePixel = 0
 AntiSlow.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_12.Parent = AntiSlow
-UICorner_12.CornerRadius = UDim.new(0, 5)
+UICorner_13.Parent = AntiSlow
+UICorner_13.CornerRadius = UDim.new(0, 5)
 
 Text_4.Name = "Text"
 Text_4.Parent = AntiSlow
@@ -367,8 +391,8 @@ Activate_3.TextScaled = true
 Activate_3.TextSize = 14
 Activate_3.TextWrapped = true
 
-UICorner_13.Parent = Activate_3
-UICorner_13.CornerRadius = UDim.new(0, 5)
+UICorner_14.Parent = Activate_3
+UICorner_14.CornerRadius = UDim.new(0, 5)
 
 Fly.Name = "Fly"
 Fly.Parent = Main_2
@@ -377,8 +401,8 @@ Fly.BorderColor3 = Color3.new(0, 0, 0)
 Fly.BorderSizePixel = 0
 Fly.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_14.Parent = Fly
-UICorner_14.CornerRadius = UDim.new(0, 5)
+UICorner_15.Parent = Fly
+UICorner_15.CornerRadius = UDim.new(0, 5)
 
 Text_5.Name = "Text"
 Text_5.Parent = Fly
@@ -410,8 +434,8 @@ Activate_4.TextScaled = true
 Activate_4.TextSize = 14
 Activate_4.TextWrapped = true
 
-UICorner_15.Parent = Activate_4
-UICorner_15.CornerRadius = UDim.new(0, 5)
+UICorner_16.Parent = Activate_4
+UICorner_16.CornerRadius = UDim.new(0, 5)
 
 Target_2.Name = "Target"
 Target_2.Parent = FeaturesFrame
@@ -436,8 +460,8 @@ TargetName.BorderColor3 = Color3.new(0, 0, 0)
 TargetName.BorderSizePixel = 0
 TargetName.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_16.Parent = TargetName
-UICorner_16.CornerRadius = UDim.new(0, 5)
+UICorner_17.Parent = TargetName
+UICorner_17.CornerRadius = UDim.new(0, 5)
 
 TextBox.Parent = TargetName
 TextBox.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
@@ -454,8 +478,8 @@ TextBox.TextScaled = true
 TextBox.TextSize = 14
 TextBox.TextWrapped = true
 
-UICorner_17.Parent = TextBox
-UICorner_17.CornerRadius = UDim.new(0, 5)
+UICorner_18.Parent = TextBox
+UICorner_18.CornerRadius = UDim.new(0, 5)
 
 TeleportTo.Name = "TeleportTo"
 TeleportTo.Parent = Target_2
@@ -464,8 +488,8 @@ TeleportTo.BorderColor3 = Color3.new(0, 0, 0)
 TeleportTo.BorderSizePixel = 0
 TeleportTo.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_18.Parent = TeleportTo
-UICorner_18.CornerRadius = UDim.new(0, 5)
+UICorner_19.Parent = TeleportTo
+UICorner_19.CornerRadius = UDim.new(0, 5)
 
 Text_6.Name = "Text"
 Text_6.Parent = TeleportTo
@@ -497,8 +521,8 @@ Activate_5.TextScaled = true
 Activate_5.TextSize = 14
 Activate_5.TextWrapped = true
 
-UICorner_19.Parent = Activate_5
-UICorner_19.CornerRadius = UDim.new(0, 5)
+UICorner_20.Parent = Activate_5
+UICorner_20.CornerRadius = UDim.new(0, 5)
 
 HeadSit.Name = "HeadSit"
 HeadSit.Parent = Target_2
@@ -507,8 +531,8 @@ HeadSit.BorderColor3 = Color3.new(0, 0, 0)
 HeadSit.BorderSizePixel = 0
 HeadSit.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_20.Parent = HeadSit
-UICorner_20.CornerRadius = UDim.new(0, 5)
+UICorner_21.Parent = HeadSit
+UICorner_21.CornerRadius = UDim.new(0, 5)
 
 Text_7.Name = "Text"
 Text_7.Parent = HeadSit
@@ -540,8 +564,67 @@ Activate_6.TextScaled = true
 Activate_6.TextSize = 14
 Activate_6.TextWrapped = true
 
-UICorner_21.Parent = Activate_6
-UICorner_21.CornerRadius = UDim.new(0, 5)
+UICorner_22.Parent = Activate_6
+UICorner_22.CornerRadius = UDim.new(0, 5)
+
+ESP_2.Name = "ESP"
+ESP_2.Parent = FeaturesFrame
+ESP_2.Active = true
+ESP_2.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+ESP_2.BackgroundTransparency = 1
+ESP_2.BorderColor3 = Color3.new(0, 0, 0)
+ESP_2.BorderSizePixel = 0
+ESP_2.Position = UDim2.new(0.0121550355, 0, 0.0126518589, 0)
+ESP_2.Size = UDim2.new(0.976191342, 0, 0.974696279, 0)
+ESP_2.Visible = false
+ESP_2.ScrollBarThickness = 0
+
+UIListLayout_5.Parent = ESP_2
+UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_5.Padding = UDim.new(0, 5)
+
+ESP_3.Name = "ESP"
+ESP_3.Parent = ESP_2
+ESP_3.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+ESP_3.BorderColor3 = Color3.new(0, 0, 0)
+ESP_3.BorderSizePixel = 0
+ESP_3.Size = UDim2.new(1, 0, 0.0500000007, 0)
+
+UICorner_23.Parent = ESP_3
+UICorner_23.CornerRadius = UDim.new(0, 5)
+
+Text_8.Name = "Text"
+Text_8.Parent = ESP_3
+Text_8.BackgroundColor3 = Color3.new(1, 1, 1)
+Text_8.BackgroundTransparency = 1
+Text_8.BorderColor3 = Color3.new(0, 0, 0)
+Text_8.BorderSizePixel = 0
+Text_8.Position = UDim2.new(0.0115649207, 0, 0.13554503, 0)
+Text_8.Size = UDim2.new(0.974942684, 0, 0.728910148, 0)
+Text_8.Font = Enum.Font.Arial
+Text_8.Text = "ESP"
+Text_8.TextColor3 = Color3.new(1, 1, 1)
+Text_8.TextScaled = true
+Text_8.TextSize = 14
+Text_8.TextWrapped = true
+Text_8.TextXAlignment = Enum.TextXAlignment.Left
+
+Activate_7.Name = "Activate"
+Activate_7.Parent = ESP_3
+Activate_7.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Activate_7.BorderColor3 = Color3.new(0, 0, 0)
+Activate_7.BorderSizePixel = 0
+Activate_7.Position = UDim2.new(0.919846356, 0, 0.136000142, 0)
+Activate_7.Size = UDim2.new(0.0671535805, 0, 0.728999972, 0)
+Activate_7.Font = Enum.Font.SourceSans
+Activate_7.Text = ""
+Activate_7.TextColor3 = Color3.new(0, 0, 0)
+Activate_7.TextScaled = true
+Activate_7.TextSize = 14
+Activate_7.TextWrapped = true
+
+UICorner_24.Parent = Activate_7
+UICorner_24.CornerRadius = UDim.new(0, 5)
 
 TitleFrame.Name = "TitleFrame"
 TitleFrame.Parent = MainFrame
@@ -551,8 +634,8 @@ TitleFrame.BorderSizePixel = 0
 TitleFrame.Position = UDim2.new(0.00766877318, 0, 0.0127458936, 0)
 TitleFrame.Size = UDim2.new(0.980952203, 0, 0.0949868783, 0)
 
-UICorner_22.Parent = TitleFrame
-UICorner_22.CornerRadius = UDim.new(0, 5)
+UICorner_25.Parent = TitleFrame
+UICorner_25.CornerRadius = UDim.new(0, 5)
 
 Title.Name = "Title"
 Title.Parent = TitleFrame
@@ -569,8 +652,8 @@ Title.TextSize = 14
 Title.TextWrapped = true
 Title.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_23.Parent = Title
-UICorner_23.CornerRadius = UDim.new(0, 5)
+UICorner_26.Parent = Title
+UICorner_26.CornerRadius = UDim.new(0, 5)
 
 CloseButton.Name = "CloseButton"
 CloseButton.Parent = TitleFrame
@@ -586,8 +669,8 @@ CloseButton.TextScaled = true
 CloseButton.TextSize = 14
 CloseButton.TextWrapped = true
 
-UICorner_24.Parent = CloseButton
-UICorner_24.CornerRadius = UDim.new(0, 5)
+UICorner_27.Parent = CloseButton
+UICorner_27.CornerRadius = UDim.new(0, 5)
 
 UIAspectRatioConstraint.Parent = MainFrame
 UIAspectRatioConstraint.AspectRatio = 1.383912205696106
@@ -608,7 +691,7 @@ OpenButton.TextScaled = true
 OpenButton.TextSize = 14
 OpenButton.TextWrapped = true
 
-UICorner_25.Parent = OpenButton
+UICorner_28.Parent = OpenButton
 
 FlyFrame.Name = "FlyFrame"
 FlyFrame.Parent = DaHoodGui
@@ -619,7 +702,7 @@ FlyFrame.Position = UDim2.new(0.0816873759, 0, 0.527318299, 0)
 FlyFrame.Size = UDim2.new(0.164094195, 0, 0.314285725, 0)
 FlyFrame.Visible = false
 
-UICorner_26.Parent = FlyFrame
+UICorner_29.Parent = FlyFrame
 
 Left.Name = "Left"
 Left.Parent = FlyFrame
@@ -635,7 +718,7 @@ Left.TextScaled = true
 Left.TextSize = 14
 Left.TextWrapped = true
 
-UICorner_27.Parent = Left
+UICorner_30.Parent = Left
 
 Down.Name = "Down"
 Down.Parent = FlyFrame
@@ -651,7 +734,7 @@ Down.TextScaled = true
 Down.TextSize = 14
 Down.TextWrapped = true
 
-UICorner_28.Parent = Down
+UICorner_31.Parent = Down
 
 Up.Name = "Up"
 Up.Parent = FlyFrame
@@ -667,7 +750,7 @@ Up.TextScaled = true
 Up.TextSize = 14
 Up.TextWrapped = true
 
-UICorner_29.Parent = Up
+UICorner_32.Parent = Up
 
 Right.Name = "Right"
 Right.Parent = FlyFrame
@@ -683,19 +766,21 @@ Right.TextScaled = true
 Right.TextSize = 14
 Right.TextWrapped = true
 
-UICorner_30.Parent = Right
+UICorner_33.Parent = Right
 
 UIAspectRatioConstraint_2.Parent = FlyFrame
 UIAspectRatioConstraint_2.AspectRatio = 1.0003987550735474
 
 -- Scripts
 
-local function AKZWSY_fake_script() -- DaHoodGui.MainScript 
+local function BNOE_fake_script() -- DaHoodGui.MainScript 
 	local script = Instance.new('LocalScript', DaHoodGui)
 
 	local UserInputService = game:GetService("UserInputService")
 	local TweenService = game:GetService("TweenService")
 	local CoreGui = game:GetService("CoreGui")
+	
+	local CanDrag = true
 	
 	local Dragging
 	local DragInput
@@ -707,6 +792,16 @@ local function AKZWSY_fake_script() -- DaHoodGui.MainScript
 	local Title = MainFrame.TitleFrame.Title
 	local OpenButton = ScreenGui.OpenButton
 	
+	TweenService:Create(MainFrame, TweenInfo.new(0.25), { Position = UDim2.fromScale(0.252, 0.157)}):Play()
+	TweenService:Create(MainFrame, TweenInfo.new(0.25), { Size = UDim2.fromScale(0.495, 0.685) }):Play()
+	
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Welcome!",
+		Text = "Welcome to Da Hood Script! (Still in beta.)",
+		Duration = 10,
+		Button1 = "Okay"
+	})
+	
 	local Target = nil
 	
 	local ButtonsActivated = {
@@ -716,6 +811,9 @@ local function AKZWSY_fake_script() -- DaHoodGui.MainScript
 			HeadSit = false,
 			AntiSlow = false,
 			Fly = false
+		},
+		["Visuals"] = {
+			ESP = false
 		}
 	}
 	
@@ -723,9 +821,11 @@ local function AKZWSY_fake_script() -- DaHoodGui.MainScript
 		local delta = input.Position - DragStart
 		local dragTime = 0.04
 		local SmoothDrag = {}
-		SmoothDrag.Position = UDim2.new(StartPos.X.Scale, StartPos.X.Offset + delta.X, StartPos.Y.Scale, StartPos.Y.Offset + delta.Y)
-		local dragSmoothFunction = TweenService:Create(MainFrame, TweenInfo.new(dragTime, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), SmoothDrag)
-		dragSmoothFunction:Play()
+		if CanDrag then
+			SmoothDrag.Position = UDim2.new(StartPos.X.Scale, StartPos.X.Offset + delta.X, StartPos.Y.Scale, StartPos.Y.Offset + delta.Y)
+			local dragSmoothFunction = TweenService:Create(MainFrame, TweenInfo.new(dragTime, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), SmoothDrag)
+			dragSmoothFunction:Play()
+		end
 	end
 	
 	Title.InputBegan:Connect(function(Input)
@@ -745,6 +845,7 @@ local function AKZWSY_fake_script() -- DaHoodGui.MainScript
 			dragInput = input
 		end
 	end)
+	
 	UserInputService.InputChanged:Connect(function(input)
 		if input == dragInput and Dragging and MainFrame.Size then
 			update(input)
@@ -754,6 +855,7 @@ local function AKZWSY_fake_script() -- DaHoodGui.MainScript
 	for _,PageButton in pairs(MainFrame.PagesFrame.Pages:GetChildren()) do
 		if PageButton:IsA("TextButton") then
 			PageButton.MouseButton1Click:Connect(function()
+				script.Click:Play()
 				for _,Page in pairs(MainFrame.FeaturesFrame:GetChildren()) do
 					if Page:IsA("ScrollingFrame") then
 						if Page.Name ~= PageButton.Name then
@@ -776,11 +878,27 @@ local function AKZWSY_fake_script() -- DaHoodGui.MainScript
 							if ButtonsActivated.Character.SuperSpeed == false then
 								Instance.new("IntValue", game.Players.LocalPlayer.Character.BodyEffects.Movement).Name = "SuperSpeed"
 								ButtonsActivated.Character.SuperSpeed = true
-								PageFrame.Activate.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(120, 120, 120) }):Play()
+								script.Click:Play()
+	
+								game.StarterGui:SetCore("SendNotification", {
+									Title = "Activated",
+									Text = "Super Speed activated",
+									Duration = 10,
+									Button1 = "Okay"
+								})
 							else
 								game.Players.LocalPlayer.Character.BodyEffects.Movement:FindFirstChild("SuperSpeed"):Destroy()
 								ButtonsActivated.Character.SuperSpeed = false
-								PageFrame.Activate.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(40, 40, 40) }):Play()
+								script.Click:Play()
+	
+								game.StarterGui:SetCore("SendNotification", {
+									Title = "Disabled",
+									Text = "Super Speed disabled",
+									Duration = 10,
+									Button1 = "Okay"
+								})
 							end
 						end)
 					elseif PageFrame.Name == "SuperJump" then
@@ -788,16 +906,42 @@ local function AKZWSY_fake_script() -- DaHoodGui.MainScript
 							if ButtonsActivated.Character.SuperJump == false then
 								Instance.new("IntValue", game.Players.LocalPlayer.Character.BodyEffects.Movement).Name = "HighJump"
 								ButtonsActivated.Character.SuperJump = true
-								PageFrame.Activate.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(120, 120, 120) }):Play()
+								script.Click:Play()
+	
+								game.StarterGui:SetCore("SendNotification", {
+									Title = "Activated",
+									Text = "Super Jump activated",
+									Duration = 10,
+									Button1 = "Okay"
+								})
 							else
 								game.Players.LocalPlayer.Character.BodyEffects.Movement:FindFirstChild("HighJump"):Destroy()
 								ButtonsActivated.Character.SuperJump = false
-								PageFrame.Activate.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(40, 40, 40) }):Play()
+								script.Click:Play()
+	
+								game.StarterGui:SetCore("SendNotification", {
+									Title = "Disabled",
+									Text = "Super Jump disabled",
+									Duration = 10,
+									Button1 = "Okay"
+								})
 							end
 						end)
 					elseif PageFrame.Name == "TeleportTo" then
 						PageFrame:WaitForChild("Activate").MouseButton1Click:Connect(function()
-							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
+							if Target ~= nil then
+								game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
+								script.Click:Play()
+	
+								game.StarterGui:SetCore("SendNotification", {
+									Title = "Teleported",
+									Text = "Teleported to target",
+									Duration = 10,
+									Button1 = "Okay"
+								})
+							end
 						end)
 					elseif PageFrame.Name == "TargetName" then
 						PageFrame:WaitForChild("TextBox").FocusLost:Connect(function()
@@ -805,47 +949,144 @@ local function AKZWSY_fake_script() -- DaHoodGui.MainScript
 								if string.find(plr.Name, PageFrame.TextBox.Text) then
 									Target = plr
 									PageFrame.TextBox.Text = plr.Name
+	
+									game.StarterGui:SetCore("SendNotification", {
+										Title = "Target set",
+										Text = "Set target to: ".. plr.Name,
+										Duration = 10,
+										Button1 = "Okay"
+									})
 								elseif string.find(plr.DisplayName, PageFrame.TextBox.Text) then
 									Target = plr
 									PageFrame.TextBox.Text = plr.DisplayName
+	
+									game.StarterGui:SetCore("SendNotification", {
+										Title = "Target set",
+										Text = "Set target to: ".. plr.DisplayName,
+										Duration = 10,
+										Button1 = "Okay"
+									})
+								else
+									game.StarterGui:SetCore("SendNotification", {
+										Title = "Target set failed",
+										Text = "Failed to set target, try entering username again!",
+										Duration = 10,
+										Button1 = "Okay"
+									})
 								end
 							end
 						end)
 					elseif PageFrame.Name == "HeadSit" then
 						PageFrame:WaitForChild("Activate").MouseButton1Click:Connect(function()
 							if ButtonsActivated.Character.HeadSit == false then
-								ButtonsActivated.Character.HeadSit = true
-								PageFrame.Activate.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+								if Target ~= nil then
+									ButtonsActivated.Character.HeadSit = true
+									TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(120, 120, 120) }):Play()
+									script.Click:Play()
+	
+									game.StarterGui:SetCore("SendNotification", {
+										Title = "Activated",
+										Text = "HeadSit activated",
+										Duration = 10,
+										Button1 = "Okay"
+									})
+								end
 							else
 								ButtonsActivated.Character.HeadSit = false
-								PageFrame.Activate.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(40, 40, 40) }):Play()
+								script.Click:Play()
+	
+								game.StarterGui:SetCore("SendNotification", {
+									Title = "Disabled",
+									Text = "HeadSit disabled",
+									Duration = 10,
+									Button1 = "Okay"
+								})
 							end
 						end)
 					elseif PageFrame.Name == "AntiSlow" then
 						PageFrame:WaitForChild("Activate").MouseButton1Click:Connect(function()
 							if ButtonsActivated.Character.AntiSlow == false then
 								ButtonsActivated.Character.AntiSlow = true
-								PageFrame.Activate.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(120, 120, 120) }):Play()
+								script.Click:Play()
+	
+								game.StarterGui:SetCore("SendNotification", {
+									Title = "Activated",
+									Text = "Anti-Slow activated",
+									Duration = 10,
+									Button1 = "Okay"
+								})
 							else
 								ButtonsActivated.Character.AntiSlow = false
-								PageFrame.Activate.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(40, 40, 40) }):Play()
+								script.Click:Play()
+	
+								game.StarterGui:SetCore("SendNotification", {
+									Title = "Disabled",
+									Text = "Anti-Slow disabled",
+									Duration = 10,
+									Button1 = "Okay"
+								})
+							end
+						end)
+					elseif PageFrame.Name == "ESP" then
+						PageFrame:WaitForChild("Activate").MouseButton1Click:Connect(function()
+							if ButtonsActivated.Visuals.ESP == false then
+								ButtonsActivated.Visuals.ESP = true
+								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(120, 120, 120) }):Play()
+								script.Click:Play()
+	
+								game.StarterGui:SetCore("SendNotification", {
+									Title = "Activated",
+									Text = "ESP activated",
+									Duration = 10,
+									Button1 = "Okay"
+								})
+							else
+								ButtonsActivated.Visuals.ESP = false
+								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(40, 40, 40) }):Play()
+								script.Click:Play()
+	
+								game.StarterGui:SetCore("SendNotification", {
+									Title = "Disabled",
+									Text = "ESP disabled",
+									Duration = 10,
+									Button1 = "Okay"
+								})
 							end
 						end)
 					elseif PageFrame.Name == "Fly" then
 						PageFrame:WaitForChild("Activate").MouseButton1Click:Connect(function()
 							if ButtonsActivated.Character.Fly == false then
 								ButtonsActivated.Character.Fly = true
-								PageFrame.Activate.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(120, 120, 120) }):Play()
+								script.Click:Play()
 								game.Players.LocalPlayer.Character.Animate.Disabled = true
 								local bv = Instance.new("BodyVelocity", game.Players.LocalPlayer.Character.PrimaryPart)
 								bv.MaxForce = Vector3.new(math.huge,math.huge,math.huge)
 								bv.Velocity = Vector3.new(0,0,0)
 								bv.Name = "FlightForce"
+	
+								game.StarterGui:SetCore("SendNotification", {
+									Title = "Activated",
+									Text = "Fly activated",
+									Duration = 10,
+									Button1 = "Okay"
+								})
 							else
 								ButtonsActivated.Character.Fly = false
-								PageFrame.Activate.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(40, 40, 40) }):Play()
+								script.Click:Play()
 								game.Players.LocalPlayer.Character.Animate.Disabled = false
 								game.Players.LocalPlayer.Character.PrimaryPart:FindFirstChild("FlightForce"):Destroy()
+	
+								game.StarterGui:SetCore("SendNotification", {
+									Title = "Disabled",
+									Text = "Fly disabled",
+									Duration = 10,
+									Button1 = "Okay"
+								})
 							end
 						end)
 					end
@@ -854,14 +1095,23 @@ local function AKZWSY_fake_script() -- DaHoodGui.MainScript
 		end
 	end
 	
+	local OldPos = nil
+	
 	MainFrame.TitleFrame.CloseButton.MouseButton1Click:Connect(function()
-		MainFrame.Visible = false
+		script.Click:Play()
 		OpenButton.Visible = true
+		CanDrag = false
+		OldPos = MainFrame.Position
+		TweenService:Create(MainFrame, TweenInfo.new(0.25), { Position = MainFrame.Position + UDim2.fromScale(MainFrame.Size.X.Scale/2, MainFrame.Size.Y.Scale/2) }):Play()
+		TweenService:Create(MainFrame, TweenInfo.new(0.25), { Size = UDim2.fromScale(0, 0) }):Play()
 	end)
 	
 	OpenButton.MouseButton1Click:Connect(function()
-		MainFrame.Visible = true
+		script.Click:Play()
 		OpenButton.Visible = false
+		CanDrag = true
+		TweenService:Create(MainFrame, TweenInfo.new(0.25), { Position = OldPos}):Play()
+		TweenService:Create(MainFrame, TweenInfo.new(0.25), { Size = UDim2.fromScale(0.495, 0.685) }):Play()
 	end)
 	
 	game.Players.LocalPlayer.CharacterAdded:Connect(function(Character)
@@ -870,6 +1120,12 @@ local function AKZWSY_fake_script() -- DaHoodGui.MainScript
 		end
 		if ButtonsActivated.Character.SuperJump == true then
 			Instance.new("IntValue", game.Players.LocalPlayer.Character.BodyEffects.Movement).Name = "HighJump"
+		end
+		if ButtonsActivated.Character.Fly == true then
+			local bv = Instance.new("BodyVelocity", game.Players.LocalPlayer.Character.PrimaryPart)
+			bv.MaxForce = Vector3.new(math.huge,math.huge,math.huge)
+			bv.Velocity = Vector3.new(0,0,0)
+			bv.Name = "FlightForce"
 		end
 	end)
 	
@@ -937,8 +1193,10 @@ local function AKZWSY_fake_script() -- DaHoodGui.MainScript
 	
 	game:GetService("RunService").Heartbeat:Connect(function()
 		if ButtonsActivated.Character.HeadSit == true then
-			game.Players.LocalPlayer.Character.Humanoid.Sit = true
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.Head.CFrame
+			if Target ~= nil then
+				game.Players.LocalPlayer.Character.Humanoid.Sit = true
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.Head.CFrame
+			end
 		end
 		if ButtonsActivated.Character.AntiSlow == true then
 			if game.Players.LocalPlayer.Character.BodyEffects.Movement:FindFirstChild("NoWalkSpeed") then wait(0.1)
@@ -990,6 +1248,43 @@ local function AKZWSY_fake_script() -- DaHoodGui.MainScript
 				root.Anchored = true
 			end
 		end
+		
+		if ButtonsActivated.Visuals.ESP == true then
+			for _,plr in pairs(game.Players:GetPlayers()) do
+				if plr ~= game.Players.LocalPlayer then
+					local char = plr.Character
+	
+					if not char:FindFirstChild("ESP") then
+						local ESP = Instance.new("Highlight", char)
+						ESP.Name = "ESP"
+						ESP.OutlineTransparency = 1
+					end
+				end
+			end
+		elseif ButtonsActivated.Visuals.ESP == false then
+			for _,plr in pairs(game.Players:GetPlayers()) do
+				if plr ~= game.Players.LocalPlayer then
+					local char = plr.Character
+	
+					if not char:WaitForChild("ESP") then
+						char:WaitForChild("ESP"):Destroy()
+					end
+				end
+			end
+		end
+	end)
+	
+	game.Players.PlayerRemoving:Connect(function(plr)
+		if plr == Target then
+			Target = nil
+			
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Target left",
+				Text = "Targetted player has left the server",
+				Duration = 10,
+				Button1 = "Okay"
+			})
+		end
 	end)
 end
-coroutine.wrap(AKZWSY_fake_script)()
+coroutine.wrap(BNOE_fake_script)()
