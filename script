@@ -1,5 +1,9 @@
 --// HIIIIIII copy all u want idrc :)
 
+if game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("DaHoodGui") then
+	game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("DaHoodGui"):Destroy()
+end
+
 local DaHoodGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -462,4 +466,5 @@ local function GLYTF_fake_script() -- DaHoodGui.MainScript
 		end
 	end)
 end
+
 coroutine.wrap(GLYTF_fake_script)()
