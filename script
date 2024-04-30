@@ -1,0 +1,465 @@
+--// HIIIIIII copy all u want idrc :)
+
+local DaHoodGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local PagesFrame = Instance.new("Frame")
+local Pages = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local Home = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Main = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
+local FeaturesFrame = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local Home_2 = Instance.new("ScrollingFrame")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local Creator = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local Text = Instance.new("TextLabel")
+local Main_2 = Instance.new("ScrollingFrame")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local SuperSpeed = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local Text_2 = Instance.new("TextLabel")
+local Activate = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local SuperJump = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local Text_3 = Instance.new("TextLabel")
+local Activate_2 = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local TitleFrame = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UICorner_12 = Instance.new("UICorner")
+local CloseButton = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local OpenButton = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+
+-- Properties
+
+DaHoodGui.Name = "DaHoodGui"
+DaHoodGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DaHoodGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+DaHoodGui.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = DaHoodGui
+MainFrame.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+MainFrame.BorderColor3 = Color3.new(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.251798481, 0, 0.156641528, 0)
+MainFrame.Size = UDim2.new(0.495094836, 0, 0.685463667, 0)
+
+UICorner.Parent = MainFrame
+
+PagesFrame.Name = "PagesFrame"
+PagesFrame.Parent = MainFrame
+PagesFrame.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+PagesFrame.BorderColor3 = Color3.new(0, 0, 0)
+PagesFrame.BorderSizePixel = 0
+PagesFrame.Position = UDim2.new(0.00766881322, 0, 0.120564774, 0)
+PagesFrame.Size = UDim2.new(0.269776702, 0, 0.86664325, 0)
+
+Pages.Name = "Pages"
+Pages.Parent = PagesFrame
+Pages.Active = true
+Pages.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Pages.BackgroundTransparency = 1
+Pages.BorderColor3 = Color3.new(0, 0, 0)
+Pages.BorderSizePixel = 0
+Pages.Position = UDim2.new(0.0328525789, 0, 0.0126518402, 0)
+Pages.Size = UDim2.new(0.934796214, 0, 0.974696338, 0)
+Pages.ScrollBarThickness = 0
+
+UIListLayout.Parent = Pages
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 5)
+
+Home.Name = "Home"
+Home.Parent = Pages
+Home.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Home.BorderColor3 = Color3.new(0, 0, 0)
+Home.BorderSizePixel = 0
+Home.Size = UDim2.new(1, 0, 0.0500000007, 0)
+Home.Font = Enum.Font.Arial
+Home.Text = "Home"
+Home.TextColor3 = Color3.new(1, 1, 1)
+Home.TextScaled = true
+Home.TextSize = 14
+Home.TextWrapped = true
+
+UICorner_2.Parent = Home
+UICorner_2.CornerRadius = UDim.new(0, 5)
+
+Main.Name = "Main"
+Main.Parent = Pages
+Main.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Main.BorderColor3 = Color3.new(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Size = UDim2.new(1, 0, 0.0500000007, 0)
+Main.Font = Enum.Font.Arial
+Main.Text = "Main"
+Main.TextColor3 = Color3.new(1, 1, 1)
+Main.TextScaled = true
+Main.TextSize = 14
+Main.TextWrapped = true
+
+UICorner_3.Parent = Main
+UICorner_3.CornerRadius = UDim.new(0, 5)
+
+UICorner_4.Parent = PagesFrame
+UICorner_4.CornerRadius = UDim.new(0, 5)
+
+FeaturesFrame.Name = "FeaturesFrame"
+FeaturesFrame.Parent = MainFrame
+FeaturesFrame.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+FeaturesFrame.BorderColor3 = Color3.new(0, 0, 0)
+FeaturesFrame.BorderSizePixel = 0
+FeaturesFrame.Position = UDim2.new(0.28738904, 0, 0.120564774, 0)
+FeaturesFrame.Size = UDim2.new(0.701231897, 0, 0.86664325, 0)
+
+UICorner_5.Parent = FeaturesFrame
+UICorner_5.CornerRadius = UDim.new(0, 5)
+
+Home_2.Name = "Home"
+Home_2.Parent = FeaturesFrame
+Home_2.Active = true
+Home_2.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Home_2.BackgroundTransparency = 1
+Home_2.BorderColor3 = Color3.new(0, 0, 0)
+Home_2.BorderSizePixel = 0
+Home_2.Position = UDim2.new(0.0121550355, 0, 0.0126518589, 0)
+Home_2.Size = UDim2.new(0.976191342, 0, 0.974696279, 0)
+Home_2.ScrollBarThickness = 0
+
+UIListLayout_2.Parent = Home_2
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 5)
+
+Creator.Name = "Creator"
+Creator.Parent = Home_2
+Creator.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Creator.BorderColor3 = Color3.new(0, 0, 0)
+Creator.BorderSizePixel = 0
+Creator.Size = UDim2.new(1, 0, 0.0500000007, 0)
+
+UICorner_6.Parent = Creator
+UICorner_6.CornerRadius = UDim.new(0, 5)
+
+Text.Name = "Text"
+Text.Parent = Creator
+Text.BackgroundColor3 = Color3.new(1, 1, 1)
+Text.BackgroundTransparency = 1
+Text.BorderColor3 = Color3.new(0, 0, 0)
+Text.BorderSizePixel = 0
+Text.Position = UDim2.new(0.0115649207, 0, 0.13554503, 0)
+Text.Size = UDim2.new(0.974942684, 0, 0.728910148, 0)
+Text.Font = Enum.Font.Arial
+Text.Text = "Made by: Bastian0z"
+Text.TextColor3 = Color3.new(1, 1, 1)
+Text.TextScaled = true
+Text.TextSize = 14
+Text.TextWrapped = true
+
+Main_2.Name = "Main"
+Main_2.Parent = FeaturesFrame
+Main_2.Active = true
+Main_2.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Main_2.BackgroundTransparency = 1
+Main_2.BorderColor3 = Color3.new(0, 0, 0)
+Main_2.BorderSizePixel = 0
+Main_2.Position = UDim2.new(0.0121550355, 0, 0.0126518589, 0)
+Main_2.Size = UDim2.new(0.976191342, 0, 0.974696279, 0)
+Main_2.Visible = false
+Main_2.ScrollBarThickness = 0
+
+UIListLayout_3.Parent = Main_2
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.Padding = UDim.new(0, 5)
+
+SuperSpeed.Name = "SuperSpeed"
+SuperSpeed.Parent = Main_2
+SuperSpeed.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+SuperSpeed.BorderColor3 = Color3.new(0, 0, 0)
+SuperSpeed.BorderSizePixel = 0
+SuperSpeed.Size = UDim2.new(1, 0, 0.0500000007, 0)
+
+UICorner_7.Parent = SuperSpeed
+UICorner_7.CornerRadius = UDim.new(0, 5)
+
+Text_2.Name = "Text"
+Text_2.Parent = SuperSpeed
+Text_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Text_2.BackgroundTransparency = 1
+Text_2.BorderColor3 = Color3.new(0, 0, 0)
+Text_2.BorderSizePixel = 0
+Text_2.Position = UDim2.new(0.0115649207, 0, 0.13554503, 0)
+Text_2.Size = UDim2.new(0.974942684, 0, 0.728910148, 0)
+Text_2.Font = Enum.Font.Arial
+Text_2.Text = "Super Speed"
+Text_2.TextColor3 = Color3.new(1, 1, 1)
+Text_2.TextScaled = true
+Text_2.TextSize = 14
+Text_2.TextWrapped = true
+Text_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Activate.Name = "Activate"
+Activate.Parent = SuperSpeed
+Activate.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Activate.BorderColor3 = Color3.new(0, 0, 0)
+Activate.BorderSizePixel = 0
+Activate.Position = UDim2.new(0.919846356, 0, 0.136000142, 0)
+Activate.Size = UDim2.new(0.0671535805, 0, 0.728999972, 0)
+Activate.Font = Enum.Font.SourceSans
+Activate.Text = ""
+Activate.TextColor3 = Color3.new(0, 0, 0)
+Activate.TextScaled = true
+Activate.TextSize = 14
+Activate.TextWrapped = true
+
+UICorner_8.Parent = Activate
+UICorner_8.CornerRadius = UDim.new(0, 5)
+
+SuperJump.Name = "SuperJump"
+SuperJump.Parent = Main_2
+SuperJump.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+SuperJump.BorderColor3 = Color3.new(0, 0, 0)
+SuperJump.BorderSizePixel = 0
+SuperJump.Size = UDim2.new(1, 0, 0.0500000007, 0)
+
+UICorner_9.Parent = SuperJump
+UICorner_9.CornerRadius = UDim.new(0, 5)
+
+Text_3.Name = "Text"
+Text_3.Parent = SuperJump
+Text_3.BackgroundColor3 = Color3.new(1, 1, 1)
+Text_3.BackgroundTransparency = 1
+Text_3.BorderColor3 = Color3.new(0, 0, 0)
+Text_3.BorderSizePixel = 0
+Text_3.Position = UDim2.new(0.0115649207, 0, 0.13554503, 0)
+Text_3.Size = UDim2.new(0.974942684, 0, 0.728910148, 0)
+Text_3.Font = Enum.Font.Arial
+Text_3.Text = "Super Speed"
+Text_3.TextColor3 = Color3.new(1, 1, 1)
+Text_3.TextScaled = true
+Text_3.TextSize = 14
+Text_3.TextWrapped = true
+Text_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Activate_2.Name = "Activate"
+Activate_2.Parent = SuperJump
+Activate_2.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Activate_2.BorderColor3 = Color3.new(0, 0, 0)
+Activate_2.BorderSizePixel = 0
+Activate_2.Position = UDim2.new(0.919846356, 0, 0.136000142, 0)
+Activate_2.Size = UDim2.new(0.0671535805, 0, 0.728999972, 0)
+Activate_2.Font = Enum.Font.SourceSans
+Activate_2.Text = ""
+Activate_2.TextColor3 = Color3.new(0, 0, 0)
+Activate_2.TextScaled = true
+Activate_2.TextSize = 14
+Activate_2.TextWrapped = true
+
+UICorner_10.Parent = Activate_2
+UICorner_10.CornerRadius = UDim.new(0, 5)
+
+TitleFrame.Name = "TitleFrame"
+TitleFrame.Parent = MainFrame
+TitleFrame.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+TitleFrame.BorderColor3 = Color3.new(0, 0, 0)
+TitleFrame.BorderSizePixel = 0
+TitleFrame.Position = UDim2.new(0.00766877318, 0, 0.0127458936, 0)
+TitleFrame.Size = UDim2.new(0.980952203, 0, 0.0949868783, 0)
+
+UICorner_11.Parent = TitleFrame
+UICorner_11.CornerRadius = UDim.new(0, 5)
+
+Title.Name = "Title"
+Title.Parent = TitleFrame
+Title.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Title.BorderColor3 = Color3.new(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.010379971, 0, 0.134671971, 0)
+Title.Size = UDim2.new(0.982634246, 0, 0.865328074, 0)
+Title.Font = Enum.Font.Arial
+Title.Text = "Da Hood Script"
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.TextScaled = true
+Title.TextSize = 14
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_12.Parent = Title
+UICorner_12.CornerRadius = UDim.new(0, 5)
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = TitleFrame
+CloseButton.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+CloseButton.BorderColor3 = Color3.new(0, 0, 0)
+CloseButton.BorderSizePixel = 0
+CloseButton.Position = UDim2.new(0.934999883, 0, 0.0935738385, 0)
+CloseButton.Size = UDim2.new(0.0562882647, 0, 0.793333471, 0)
+CloseButton.Font = Enum.Font.FredokaOne
+CloseButton.Text = "X"
+CloseButton.TextColor3 = Color3.new(1, 0.490196, 0.490196)
+CloseButton.TextScaled = true
+CloseButton.TextSize = 14
+CloseButton.TextWrapped = true
+
+UICorner_13.Parent = CloseButton
+UICorner_13.CornerRadius = UDim.new(0, 5)
+
+UIAspectRatioConstraint.Parent = MainFrame
+UIAspectRatioConstraint.AspectRatio = 1.383912205696106
+UIAspectRatioConstraint.DominantAxis = Enum.DominantAxis.Height
+
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = DaHoodGui
+OpenButton.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+OpenButton.BorderColor3 = Color3.new(0, 0, 0)
+OpenButton.BorderSizePixel = 0
+OpenButton.Position = UDim2.new(-0.00125247811, 0, 0.117177293, 0)
+OpenButton.Size = UDim2.new(0.075000003, 50, 0.0399999991, 15)
+OpenButton.Visible = false
+OpenButton.Font = Enum.Font.Arial
+OpenButton.Text = "Open"
+OpenButton.TextColor3 = Color3.new(1, 1, 1)
+OpenButton.TextScaled = true
+OpenButton.TextSize = 14
+OpenButton.TextWrapped = true
+
+UICorner_14.Parent = OpenButton
+
+-- Scripts
+
+local function TTTFG_fake_script() -- DaHoodGui.MainScript 
+	local script = Instance.new('LocalScript', DaHoodGui)
+
+	local UserInputService = game:GetService("UserInputService")
+	local TweenService = game:GetService("TweenService")
+	local CoreGui = game:GetService("CoreGui")
+	
+	local Dragging
+	local DragInput
+	local DragStart
+	local StartPos
+	
+	local ScreenGui = script.Parent
+	local MainFrame = ScreenGui.MainFrame
+	local Title = MainFrame.TitleFrame.Title
+	local OpenButton = ScreenGui.OpenButton
+	
+	local ButtonsActivated = {
+		["Character"] = {
+			SuperSpeed = false,
+			SuperJump = false
+		}
+	}
+	
+	local function update(input)
+		local delta = input.Position - DragStart
+		local dragTime = 0.04
+		local SmoothDrag = {}
+		SmoothDrag.Position = UDim2.new(StartPos.X.Scale, StartPos.X.Offset + delta.X, StartPos.Y.Scale, StartPos.Y.Offset + delta.Y)
+		local dragSmoothFunction = TweenService:Create(MainFrame, TweenInfo.new(dragTime, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), SmoothDrag)
+		dragSmoothFunction:Play()
+	end
+	
+	Title.InputBegan:Connect(function(Input)
+		if Input.UserInputType == Enum.UserInputType.MouseButton1 or Input.UserInputType == Enum.UserInputType.Touch then
+			Dragging = true
+			DragStart = Input.Position
+			StartPos = MainFrame.Position
+			Input.Changed:Connect(function()
+				if Input.UserInputState == Enum.UserInputState.End then
+					Dragging = false
+				end
+			end)
+		end
+	end)
+	Title.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and Dragging and MainFrame.Size then
+			update(input)
+		end
+	end)
+	
+	for _,PageButton in pairs(MainFrame.PagesFrame.Pages:GetChildren()) do
+		if PageButton:IsA("TextButton") then
+			PageButton.MouseButton1Click:Connect(function()
+				for _,Page in pairs(MainFrame.FeaturesFrame:GetChildren()) do
+					if Page:IsA("ScrollingFrame") then
+						if Page.Name ~= PageButton.Name then
+							Page.Visible = false
+						else
+							Page.Visible = true
+						end
+					end
+				end
+			end)
+		end
+	end
+	
+	for _,Page in pairs(MainFrame.FeaturesFrame:GetChildren()) do
+		if Page:IsA("ScrollingFrame") then
+			for _,PageFrame in pairs(Page:GetChildren()) do
+				if PageFrame:IsA("Frame") then
+					if PageFrame.Name == "SuperSpeed" then
+						PageFrame:WaitForChild("Activate").MouseButton1Click:Connect(function()
+							if ButtonsActivated.Character.SuperSpeed == false then
+								Instance.new("IntValue", game.Players.LocalPlayer.Character.BodyEffects.Movement).Name = "SuperSpeed"
+								ButtonsActivated.Character.SuperSpeed = true
+								PageFrame.Activate.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+							else
+								game.Players.LocalPlayer.Character.BodyEffects.Movement:FindFirstChild("SuperSpeed"):Destroy()
+								ButtonsActivated.Character.SuperSpeed = false
+								PageFrame.Activate.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+							end
+						end)
+					elseif PageFrame.Name == "SuperJump" then
+						PageFrame:WaitForChild("Activate").MouseButton1Click:Connect(function()
+							if ButtonsActivated.Character.SuperJump == false then
+								Instance.new("IntValue", game.Players.LocalPlayer.Character.BodyEffects.Movement).Name = "HighJump"
+								ButtonsActivated.Character.SuperJump = true
+								PageFrame.Activate.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+							else
+								game.Players.LocalPlayer.Character.BodyEffects.Movement:FindFirstChild("HighJump"):Destroy()
+								ButtonsActivated.Character.SuperJump = false
+								PageFrame.Activate.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+							end
+						end)
+					end
+				end
+			end
+		end
+	end
+	
+	MainFrame.TitleFrame.CloseButton.MouseButton1Click:Connect(function()
+		MainFrame.Visible = false
+		OpenButton.Visible = true
+	end)
+	
+	OpenButton.MouseButton1Click:Connect(function()
+		MainFrame.Visible = true
+		OpenButton.Visible = false
+	end)
+	
+	game.Players.LocalPlayer.CharacterAdded:Connect(function(Character)
+		if ButtonsActivated.Character.SuperSpeed == true then
+			Instance.new("IntValue", game.Players.LocalPlayer.Character.BodyEffects.Movement).Name = "SuperSpeed"
+		end
+		if ButtonsActivated.Character.SuperJump == true then
+			Instance.new("IntValue", game.Players.LocalPlayer.Character.BodyEffects.Movement).Name = "HighJump"
+		end
+	end)
+end
+coroutine.wrap(TTTFG_fake_script)()
