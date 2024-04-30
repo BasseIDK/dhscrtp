@@ -64,32 +64,39 @@ local UICorner_21 = Instance.new("UICorner")
 local Text_7 = Instance.new("TextLabel")
 local Activate_6 = Instance.new("TextButton")
 local UICorner_22 = Instance.new("UICorner")
-local ESP_2 = Instance.new("ScrollingFrame")
-local UIListLayout_5 = Instance.new("UIListLayout")
-local ESP_3 = Instance.new("Frame")
+local Sex = Instance.new("Frame")
 local UICorner_23 = Instance.new("UICorner")
 local Text_8 = Instance.new("TextLabel")
 local Activate_7 = Instance.new("TextButton")
 local UICorner_24 = Instance.new("UICorner")
-local TitleFrame = Instance.new("Frame")
+local ESP_2 = Instance.new("ScrollingFrame")
+local UIListLayout_5 = Instance.new("UIListLayout")
+local ESP_3 = Instance.new("Frame")
 local UICorner_25 = Instance.new("UICorner")
-local Title = Instance.new("TextLabel")
+local Text_9 = Instance.new("TextLabel")
+local Activate_8 = Instance.new("TextButton")
 local UICorner_26 = Instance.new("UICorner")
-local CloseButton = Instance.new("TextButton")
+local TitleFrame = Instance.new("Frame")
 local UICorner_27 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UICorner_28 = Instance.new("UICorner")
+local CloseButton = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local CurrentPage = Instance.new("TextLabel")
+local UICorner_30 = Instance.new("UICorner")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local OpenButton = Instance.new("TextButton")
-local UICorner_28 = Instance.new("UICorner")
-local FlyFrame = Instance.new("Frame")
-local UICorner_29 = Instance.new("UICorner")
-local Left = Instance.new("TextButton")
-local UICorner_30 = Instance.new("UICorner")
-local Down = Instance.new("TextButton")
 local UICorner_31 = Instance.new("UICorner")
-local Up = Instance.new("TextButton")
+local FlyFrame = Instance.new("Frame")
 local UICorner_32 = Instance.new("UICorner")
-local Right = Instance.new("TextButton")
+local Left = Instance.new("TextButton")
 local UICorner_33 = Instance.new("UICorner")
+local Down = Instance.new("TextButton")
+local UICorner_34 = Instance.new("UICorner")
+local Up = Instance.new("TextButton")
+local UICorner_35 = Instance.new("UICorner")
+local Right = Instance.new("TextButton")
+local UICorner_36 = Instance.new("UICorner")
 local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
 
 -- Properties
@@ -104,7 +111,8 @@ MainFrame.Parent = DaHoodGui
 MainFrame.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
 MainFrame.BorderColor3 = Color3.new(0, 0, 0)
 MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainFrame.Position = UDim2.new(0.252000004, 0, 0.157000005, 0)
+MainFrame.Size = UDim2.new(0.495000005, 0, 0.685000002, 0)
 
 UICorner.Parent = MainFrame
 
@@ -567,6 +575,49 @@ Activate_6.TextWrapped = true
 UICorner_22.Parent = Activate_6
 UICorner_22.CornerRadius = UDim.new(0, 5)
 
+Sex.Name = "Sex"
+Sex.Parent = Target_2
+Sex.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Sex.BorderColor3 = Color3.new(0, 0, 0)
+Sex.BorderSizePixel = 0
+Sex.Size = UDim2.new(1, 0, 0.0500000007, 0)
+
+UICorner_23.Parent = Sex
+UICorner_23.CornerRadius = UDim.new(0, 5)
+
+Text_8.Name = "Text"
+Text_8.Parent = Sex
+Text_8.BackgroundColor3 = Color3.new(1, 1, 1)
+Text_8.BackgroundTransparency = 1
+Text_8.BorderColor3 = Color3.new(0, 0, 0)
+Text_8.BorderSizePixel = 0
+Text_8.Position = UDim2.new(0.0115649207, 0, 0.13554503, 0)
+Text_8.Size = UDim2.new(0.974942684, 0, 0.728910148, 0)
+Text_8.Font = Enum.Font.Arial
+Text_8.Text = "Sex"
+Text_8.TextColor3 = Color3.new(1, 1, 1)
+Text_8.TextScaled = true
+Text_8.TextSize = 14
+Text_8.TextWrapped = true
+Text_8.TextXAlignment = Enum.TextXAlignment.Left
+
+Activate_7.Name = "Activate"
+Activate_7.Parent = Sex
+Activate_7.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Activate_7.BorderColor3 = Color3.new(0, 0, 0)
+Activate_7.BorderSizePixel = 0
+Activate_7.Position = UDim2.new(0.919846356, 0, 0.136000142, 0)
+Activate_7.Size = UDim2.new(0.0671535805, 0, 0.728999972, 0)
+Activate_7.Font = Enum.Font.SourceSans
+Activate_7.Text = ""
+Activate_7.TextColor3 = Color3.new(0, 0, 0)
+Activate_7.TextScaled = true
+Activate_7.TextSize = 14
+Activate_7.TextWrapped = true
+
+UICorner_24.Parent = Activate_7
+UICorner_24.CornerRadius = UDim.new(0, 5)
+
 ESP_2.Name = "ESP"
 ESP_2.Parent = FeaturesFrame
 ESP_2.Active = true
@@ -590,41 +641,41 @@ ESP_3.BorderColor3 = Color3.new(0, 0, 0)
 ESP_3.BorderSizePixel = 0
 ESP_3.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_23.Parent = ESP_3
-UICorner_23.CornerRadius = UDim.new(0, 5)
+UICorner_25.Parent = ESP_3
+UICorner_25.CornerRadius = UDim.new(0, 5)
 
-Text_8.Name = "Text"
-Text_8.Parent = ESP_3
-Text_8.BackgroundColor3 = Color3.new(1, 1, 1)
-Text_8.BackgroundTransparency = 1
-Text_8.BorderColor3 = Color3.new(0, 0, 0)
-Text_8.BorderSizePixel = 0
-Text_8.Position = UDim2.new(0.0115649207, 0, 0.13554503, 0)
-Text_8.Size = UDim2.new(0.974942684, 0, 0.728910148, 0)
-Text_8.Font = Enum.Font.Arial
-Text_8.Text = "ESP"
-Text_8.TextColor3 = Color3.new(1, 1, 1)
-Text_8.TextScaled = true
-Text_8.TextSize = 14
-Text_8.TextWrapped = true
-Text_8.TextXAlignment = Enum.TextXAlignment.Left
+Text_9.Name = "Text"
+Text_9.Parent = ESP_3
+Text_9.BackgroundColor3 = Color3.new(1, 1, 1)
+Text_9.BackgroundTransparency = 1
+Text_9.BorderColor3 = Color3.new(0, 0, 0)
+Text_9.BorderSizePixel = 0
+Text_9.Position = UDim2.new(0.0115649207, 0, 0.13554503, 0)
+Text_9.Size = UDim2.new(0.974942684, 0, 0.728910148, 0)
+Text_9.Font = Enum.Font.Arial
+Text_9.Text = "ESP"
+Text_9.TextColor3 = Color3.new(1, 1, 1)
+Text_9.TextScaled = true
+Text_9.TextSize = 14
+Text_9.TextWrapped = true
+Text_9.TextXAlignment = Enum.TextXAlignment.Left
 
-Activate_7.Name = "Activate"
-Activate_7.Parent = ESP_3
-Activate_7.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
-Activate_7.BorderColor3 = Color3.new(0, 0, 0)
-Activate_7.BorderSizePixel = 0
-Activate_7.Position = UDim2.new(0.919846356, 0, 0.136000142, 0)
-Activate_7.Size = UDim2.new(0.0671535805, 0, 0.728999972, 0)
-Activate_7.Font = Enum.Font.SourceSans
-Activate_7.Text = ""
-Activate_7.TextColor3 = Color3.new(0, 0, 0)
-Activate_7.TextScaled = true
-Activate_7.TextSize = 14
-Activate_7.TextWrapped = true
+Activate_8.Name = "Activate"
+Activate_8.Parent = ESP_3
+Activate_8.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Activate_8.BorderColor3 = Color3.new(0, 0, 0)
+Activate_8.BorderSizePixel = 0
+Activate_8.Position = UDim2.new(0.919846356, 0, 0.136000142, 0)
+Activate_8.Size = UDim2.new(0.0671535805, 0, 0.728999972, 0)
+Activate_8.Font = Enum.Font.SourceSans
+Activate_8.Text = ""
+Activate_8.TextColor3 = Color3.new(0, 0, 0)
+Activate_8.TextScaled = true
+Activate_8.TextSize = 14
+Activate_8.TextWrapped = true
 
-UICorner_24.Parent = Activate_7
-UICorner_24.CornerRadius = UDim.new(0, 5)
+UICorner_26.Parent = Activate_8
+UICorner_26.CornerRadius = UDim.new(0, 5)
 
 TitleFrame.Name = "TitleFrame"
 TitleFrame.Parent = MainFrame
@@ -634,16 +685,16 @@ TitleFrame.BorderSizePixel = 0
 TitleFrame.Position = UDim2.new(0.00766877318, 0, 0.0127458936, 0)
 TitleFrame.Size = UDim2.new(0.980952203, 0, 0.0949868783, 0)
 
-UICorner_25.Parent = TitleFrame
-UICorner_25.CornerRadius = UDim.new(0, 5)
+UICorner_27.Parent = TitleFrame
+UICorner_27.CornerRadius = UDim.new(0, 5)
 
 Title.Name = "Title"
 Title.Parent = TitleFrame
 Title.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
 Title.BorderColor3 = Color3.new(0, 0, 0)
 Title.BorderSizePixel = 0
-Title.Position = UDim2.new(0.010379971, 0, 0.134671971, 0)
-Title.Size = UDim2.new(0.982634246, 0, 0.865328074, 0)
+Title.Position = UDim2.new(0.0103799785, 0, 0.134671852, 0)
+Title.Size = UDim2.new(0.980908036, 0, 0.865328014, 0)
 Title.Font = Enum.Font.Arial
 Title.Text = "Da Hood Script"
 Title.TextColor3 = Color3.new(1, 1, 1)
@@ -652,8 +703,8 @@ Title.TextSize = 14
 Title.TextWrapped = true
 Title.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_26.Parent = Title
-UICorner_26.CornerRadius = UDim.new(0, 5)
+UICorner_28.Parent = Title
+UICorner_28.CornerRadius = UDim.new(0, 5)
 
 CloseButton.Name = "CloseButton"
 CloseButton.Parent = TitleFrame
@@ -669,8 +720,26 @@ CloseButton.TextScaled = true
 CloseButton.TextSize = 14
 CloseButton.TextWrapped = true
 
-UICorner_27.Parent = CloseButton
-UICorner_27.CornerRadius = UDim.new(0, 5)
+UICorner_29.Parent = CloseButton
+UICorner_29.CornerRadius = UDim.new(0, 5)
+
+CurrentPage.Name = "CurrentPage"
+CurrentPage.Parent = TitleFrame
+CurrentPage.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+CurrentPage.BorderColor3 = Color3.new(0, 0, 0)
+CurrentPage.BorderSizePixel = 0
+CurrentPage.Position = UDim2.new(0.391741246, 0, 0.394255966, 0)
+CurrentPage.Size = UDim2.new(0.0999781713, 0, 0.58648479, 0)
+CurrentPage.Font = Enum.Font.Arial
+CurrentPage.Text = "Home"
+CurrentPage.TextColor3 = Color3.new(1, 1, 1)
+CurrentPage.TextScaled = true
+CurrentPage.TextSize = 14
+CurrentPage.TextWrapped = true
+CurrentPage.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_30.Parent = CurrentPage
+UICorner_30.CornerRadius = UDim.new(0, 5)
 
 UIAspectRatioConstraint.Parent = MainFrame
 UIAspectRatioConstraint.AspectRatio = 1.383912205696106
@@ -691,7 +760,7 @@ OpenButton.TextScaled = true
 OpenButton.TextSize = 14
 OpenButton.TextWrapped = true
 
-UICorner_28.Parent = OpenButton
+UICorner_31.Parent = OpenButton
 
 FlyFrame.Name = "FlyFrame"
 FlyFrame.Parent = DaHoodGui
@@ -702,7 +771,7 @@ FlyFrame.Position = UDim2.new(0.0816873759, 0, 0.527318299, 0)
 FlyFrame.Size = UDim2.new(0.164094195, 0, 0.314285725, 0)
 FlyFrame.Visible = false
 
-UICorner_29.Parent = FlyFrame
+UICorner_32.Parent = FlyFrame
 
 Left.Name = "Left"
 Left.Parent = FlyFrame
@@ -718,7 +787,7 @@ Left.TextScaled = true
 Left.TextSize = 14
 Left.TextWrapped = true
 
-UICorner_30.Parent = Left
+UICorner_33.Parent = Left
 
 Down.Name = "Down"
 Down.Parent = FlyFrame
@@ -734,7 +803,7 @@ Down.TextScaled = true
 Down.TextSize = 14
 Down.TextWrapped = true
 
-UICorner_31.Parent = Down
+UICorner_34.Parent = Down
 
 Up.Name = "Up"
 Up.Parent = FlyFrame
@@ -750,7 +819,7 @@ Up.TextScaled = true
 Up.TextSize = 14
 Up.TextWrapped = true
 
-UICorner_32.Parent = Up
+UICorner_35.Parent = Up
 
 Right.Name = "Right"
 Right.Parent = FlyFrame
@@ -766,14 +835,14 @@ Right.TextScaled = true
 Right.TextSize = 14
 Right.TextWrapped = true
 
-UICorner_33.Parent = Right
+UICorner_36.Parent = Right
 
 UIAspectRatioConstraint_2.Parent = FlyFrame
 UIAspectRatioConstraint_2.AspectRatio = 1.0003987550735474
 
 -- Scripts
 
-local function TZHI_fake_script() -- DaHoodGui.MainScript 
+local function FMISNAB_fake_script() -- DaHoodGui.MainScript 
 	local script = Instance.new('LocalScript', DaHoodGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -803,6 +872,9 @@ local function TZHI_fake_script() -- DaHoodGui.MainScript
 		Button1 = "Okay"
 	})
 	
+	MainFrame.Position = UDim2.fromScale(0.5, 0.5)
+	MainFrame.Size = UDim2.fromScale(0, 0)
+	
 	TweenService:Create(MainFrame, TweenInfo.new(0.25), { Position = UDim2.fromScale(0.252, 0.157)}):Play()
 	TweenService:Create(MainFrame, TweenInfo.new(0.25), { Size = UDim2.fromScale(0.495, 0.685) }):Play()
 	
@@ -814,12 +886,36 @@ local function TZHI_fake_script() -- DaHoodGui.MainScript
 			SuperJump = false,
 			HeadSit = false,
 			AntiSlow = false,
-			Fly = false
+			Fly = false,
+			Sex = false
 		},
 		["Visuals"] = {
 			ESP = false
 		}
 	}
+	
+	local sexpart = Instance.new("Part", workspace)
+	sexpart.Name = "SexPos"
+	sexpart.Anchored = false
+	sexpart.Transparency = 1
+	sexpart.CanCollide = false
+	sexpart.Size = Vector3.new(1,1,1)
+	local sexweld = Instance.new("Weld", sexpart)
+	sexweld.Part0 = sexpart
+	sexweld.C0 = CFrame.new(0, -1.5, 1)
+	
+	task.spawn(function()
+		while task.wait() do
+			if ButtonsActivated.Character.Sex == true then
+				game.TweenService:Create(sexweld, TweenInfo.new(0.5, Enum.EasingStyle.Linear), { C0 = CFrame.new(0, 0.5, 1) }):Play()
+			end
+			wait(0.5)
+			if ButtonsActivated.Character.Sex == true then
+				game.TweenService:Create(sexweld, TweenInfo.new(0.5, Enum.EasingStyle.Linear), { C0 = CFrame.new(0, 0.5, 2) }):Play()
+			end
+			wait(0.5)
+		end
+	end)
 	
 	local function update(input)
 		local delta = input.Position - DragStart
@@ -866,6 +962,7 @@ local function TZHI_fake_script() -- DaHoodGui.MainScript
 							Page.Visible = false
 						else
 							Page.Visible = true
+							Title.Parent.CurrentPage.Text = Page.Name
 						end
 					end
 				end
@@ -1055,6 +1152,32 @@ local function TZHI_fake_script() -- DaHoodGui.MainScript
 								game.StarterGui:SetCore("SendNotification", {
 									Title = "Disabled",
 									Text = "ESP disabled",
+									Duration = 10,
+									Button1 = "Okay"
+								})
+							end
+						end)
+					elseif PageFrame.Name == "Sex" then
+						PageFrame:WaitForChild("Activate").MouseButton1Click:Connect(function()
+							if ButtonsActivated.Character.Sex == false then
+								ButtonsActivated.Character.Sex = true
+								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(120, 120, 120) }):Play()
+								script.Click:Play()
+	
+								game.StarterGui:SetCore("SendNotification", {
+									Title = "Activated",
+									Text = "Sex activated",
+									Duration = 10,
+									Button1 = "Okay"
+								})
+							else
+								ButtonsActivated.Character.Sex = false
+								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(40, 40, 40) }):Play()
+								script.Click:Play()
+	
+								game.StarterGui:SetCore("SendNotification", {
+									Title = "Disabled",
+									Text = "Sex disabled",
 									Duration = 10,
 									Button1 = "Okay"
 								})
@@ -1270,10 +1393,21 @@ local function TZHI_fake_script() -- DaHoodGui.MainScript
 				if plr ~= game.Players.LocalPlayer then
 					local char = plr.Character
 	
-					if char:WaitForChild("ESP") then
-						char:WaitForChild("ESP"):Destroy()
+					if char:FindFirstChild("ESP") then
+						char.ESP:Destroy()
 					end
 				end
+			end
+		end
+		
+		if ButtonsActivated.Character.Sex == true then
+			if Target ~= nil then
+				sexweld.Part1 = Target.Character.HumanoidRootPart
+				
+				game.Players.LocalPlayer.Character.Humanoid.Sit = true
+				
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = sexpart.CFrame
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame *= CFrame.Angles(math.rad(-60), 0, 0)
 			end
 		end
 	end)
@@ -1291,4 +1425,4 @@ local function TZHI_fake_script() -- DaHoodGui.MainScript
 		end
 	end)
 end
-coroutine.wrap(TZHI_fake_script)()
+coroutine.wrap(FMISNAB_fake_script)()
