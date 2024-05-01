@@ -64,7 +64,7 @@ local UICorner_21 = Instance.new("UICorner")
 local Text_7 = Instance.new("TextLabel")
 local Activate_6 = Instance.new("TextButton")
 local UICorner_22 = Instance.new("UICorner")
-local Sex = Instance.new("Frame")
+local Benx = Instance.new("Frame")
 local UICorner_23 = Instance.new("UICorner")
 local Text_8 = Instance.new("TextLabel")
 local Activate_7 = Instance.new("TextButton")
@@ -575,18 +575,18 @@ Activate_6.TextWrapped = true
 UICorner_22.Parent = Activate_6
 UICorner_22.CornerRadius = UDim.new(0, 5)
 
-Sex.Name = "Sex"
-Sex.Parent = Target_2
-Sex.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-Sex.BorderColor3 = Color3.new(0, 0, 0)
-Sex.BorderSizePixel = 0
-Sex.Size = UDim2.new(1, 0, 0.0500000007, 0)
+Benx.Name = "Benx"
+Benx.Parent = Target_2
+Benx.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Benx.BorderColor3 = Color3.new(0, 0, 0)
+Benx.BorderSizePixel = 0
+Benx.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_23.Parent = Sex
+UICorner_23.Parent = Benx
 UICorner_23.CornerRadius = UDim.new(0, 5)
 
 Text_8.Name = "Text"
-Text_8.Parent = Sex
+Text_8.Parent = Benx
 Text_8.BackgroundColor3 = Color3.new(1, 1, 1)
 Text_8.BackgroundTransparency = 1
 Text_8.BorderColor3 = Color3.new(0, 0, 0)
@@ -594,7 +594,7 @@ Text_8.BorderSizePixel = 0
 Text_8.Position = UDim2.new(0.0115649207, 0, 0.13554503, 0)
 Text_8.Size = UDim2.new(0.974942684, 0, 0.728910148, 0)
 Text_8.Font = Enum.Font.Arial
-Text_8.Text = "Sex"
+Text_8.Text = "Benx"
 Text_8.TextColor3 = Color3.new(1, 1, 1)
 Text_8.TextScaled = true
 Text_8.TextSize = 14
@@ -602,7 +602,7 @@ Text_8.TextWrapped = true
 Text_8.TextXAlignment = Enum.TextXAlignment.Left
 
 Activate_7.Name = "Activate"
-Activate_7.Parent = Sex
+Activate_7.Parent = Benx
 Activate_7.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
 Activate_7.BorderColor3 = Color3.new(0, 0, 0)
 Activate_7.BorderSizePixel = 0
@@ -842,7 +842,7 @@ UIAspectRatioConstraint_2.AspectRatio = 1.0003987550735474
 
 -- Scripts
 
-local function FMISNAB_fake_script() -- DaHoodGui.MainScript 
+local function SJLJOWY_fake_script() -- DaHoodGui.MainScript 
 	local script = Instance.new('LocalScript', DaHoodGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -887,31 +887,31 @@ local function FMISNAB_fake_script() -- DaHoodGui.MainScript
 			HeadSit = false,
 			AntiSlow = false,
 			Fly = false,
-			Sex = false
+			Benx = false
 		},
 		["Visuals"] = {
 			ESP = false
 		}
 	}
 	
-	local sexpart = Instance.new("Part", workspace)
-	sexpart.Name = "SexPos"
-	sexpart.Anchored = false
-	sexpart.Transparency = 1
-	sexpart.CanCollide = false
-	sexpart.Size = Vector3.new(1,1,1)
-	local sexweld = Instance.new("Weld", sexpart)
-	sexweld.Part0 = sexpart
-	sexweld.C0 = CFrame.new(0, -1.5, 1)
+	local benxpart = Instance.new("Part", workspace)
+	benxpart.Name = "BenxPos"
+	benxpart.Anchored = false
+	benxpart.Transparency = 1
+	benxpart.CanCollide = false
+	benxpart.Size = Vector3.new(1,1,1)
+	local benxweld = Instance.new("Weld", benxpart)
+	benxweld.Part0 = benxpart
+	benxweld.C0 = CFrame.new(0, -1.5, 1)
 	
 	task.spawn(function()
 		while task.wait() do
-			if ButtonsActivated.Character.Sex == true then
-				game.TweenService:Create(sexweld, TweenInfo.new(0.5, Enum.EasingStyle.Linear), { C0 = CFrame.new(0, 0.5, 1) }):Play()
+			if ButtonsActivated.Character.Benx == true then
+				game.TweenService:Create(benxweld, TweenInfo.new(0.5, Enum.EasingStyle.Linear), { C0 = CFrame.new(0, 0.5, 1) }):Play()
 			end
 			wait(0.5)
-			if ButtonsActivated.Character.Sex == true then
-				game.TweenService:Create(sexweld, TweenInfo.new(0.5, Enum.EasingStyle.Linear), { C0 = CFrame.new(0, 0.5, 2) }):Play()
+			if ButtonsActivated.Character.Benx == true then
+				game.TweenService:Create(benxweld, TweenInfo.new(0.5, Enum.EasingStyle.Linear), { C0 = CFrame.new(0, 0.5, 2) }):Play()
 			end
 			wait(0.5)
 		end
@@ -1157,27 +1157,27 @@ local function FMISNAB_fake_script() -- DaHoodGui.MainScript
 								})
 							end
 						end)
-					elseif PageFrame.Name == "Sex" then
+					elseif PageFrame.Name == "Benx" then
 						PageFrame:WaitForChild("Activate").MouseButton1Click:Connect(function()
-							if ButtonsActivated.Character.Sex == false then
-								ButtonsActivated.Character.Sex = true
+							if ButtonsActivated.Character.Benx == false then
+								ButtonsActivated.Character.Benx = true
 								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(120, 120, 120) }):Play()
 								script.Click:Play()
 	
 								game.StarterGui:SetCore("SendNotification", {
 									Title = "Activated",
-									Text = "Sex activated",
+									Text = "Benx activated",
 									Duration = 10,
 									Button1 = "Okay"
 								})
 							else
-								ButtonsActivated.Character.Sex = false
+								ButtonsActivated.Character.Benx = false
 								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(40, 40, 40) }):Play()
 								script.Click:Play()
 	
 								game.StarterGui:SetCore("SendNotification", {
 									Title = "Disabled",
-									Text = "Sex disabled",
+									Text = "Benx disabled",
 									Duration = 10,
 									Button1 = "Okay"
 								})
@@ -1400,13 +1400,13 @@ local function FMISNAB_fake_script() -- DaHoodGui.MainScript
 			end
 		end
 		
-		if ButtonsActivated.Character.Sex == true then
+		if ButtonsActivated.Character.Benx == true then
 			if Target ~= nil then
-				sexweld.Part1 = Target.Character.HumanoidRootPart
+				benxweld.Part1 = Target.Character.HumanoidRootPart
 				
 				game.Players.LocalPlayer.Character.Humanoid.Sit = true
 				
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = sexpart.CFrame
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = benxweld.CFrame
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame *= CFrame.Angles(math.rad(-60), 0, 0)
 			end
 		end
@@ -1425,4 +1425,4 @@ local function FMISNAB_fake_script() -- DaHoodGui.MainScript
 		end
 	end)
 end
-coroutine.wrap(FMISNAB_fake_script)()
+coroutine.wrap(SJLJOWY_fake_script)()
