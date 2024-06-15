@@ -18,65 +18,74 @@ local Target = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local ESP = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
+local Settings = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local FeaturesFrame = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
+local FeaturesFrame = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
 local Home_2 = Instance.new("ScrollingFrame")
 local UIListLayout_2 = Instance.new("UIListLayout")
 local Creator = Instance.new("Frame")
-local UICorner_8 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 local Text = Instance.new("TextLabel")
 local Main_2 = Instance.new("ScrollingFrame")
 local UIListLayout_3 = Instance.new("UIListLayout")
 local SuperSpeed = Instance.new("Frame")
-local UICorner_9 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
 local Text_2 = Instance.new("TextLabel")
 local Activate = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
-local SuperJump = Instance.new("Frame")
 local UICorner_11 = Instance.new("UICorner")
+local SuperJump = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
 local Text_3 = Instance.new("TextLabel")
 local Activate_2 = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
-local AntiSlow = Instance.new("Frame")
 local UICorner_13 = Instance.new("UICorner")
+local AntiSlow = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
 local Text_4 = Instance.new("TextLabel")
 local Activate_3 = Instance.new("TextButton")
-local UICorner_14 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
 local Target_2 = Instance.new("ScrollingFrame")
 local UIListLayout_4 = Instance.new("UIListLayout")
 local TargetName = Instance.new("Frame")
-local UICorner_15 = Instance.new("UICorner")
-local TextBox = Instance.new("TextBox")
 local UICorner_16 = Instance.new("UICorner")
-local TeleportTo = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
 local UICorner_17 = Instance.new("UICorner")
+local TeleportTo = Instance.new("Frame")
+local UICorner_18 = Instance.new("UICorner")
 local Text_5 = Instance.new("TextLabel")
 local Activate_4 = Instance.new("TextButton")
-local UICorner_18 = Instance.new("UICorner")
-local HeadSit = Instance.new("Frame")
 local UICorner_19 = Instance.new("UICorner")
+local HeadSit = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
 local Text_6 = Instance.new("TextLabel")
 local Activate_5 = Instance.new("TextButton")
-local UICorner_20 = Instance.new("UICorner")
+local UICorner_21 = Instance.new("UICorner")
 local ESP_2 = Instance.new("ScrollingFrame")
 local UIListLayout_5 = Instance.new("UIListLayout")
 local ESP_3 = Instance.new("Frame")
-local UICorner_21 = Instance.new("UICorner")
+local UICorner_22 = Instance.new("UICorner")
 local Text_7 = Instance.new("TextLabel")
 local Activate_6 = Instance.new("TextButton")
-local UICorner_22 = Instance.new("UICorner")
-local TitleFrame = Instance.new("Frame")
 local UICorner_23 = Instance.new("UICorner")
-local Title = Instance.new("TextLabel")
+local Settings_2 = Instance.new("ScrollingFrame")
+local UIListLayout_6 = Instance.new("UIListLayout")
+local Notifications = Instance.new("Frame")
 local UICorner_24 = Instance.new("UICorner")
-local CloseButton = Instance.new("TextButton")
+local Text_8 = Instance.new("TextLabel")
+local Activate_7 = Instance.new("TextButton")
 local UICorner_25 = Instance.new("UICorner")
-local CurrentPage = Instance.new("TextLabel")
+local TitleFrame = Instance.new("Frame")
 local UICorner_26 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UICorner_27 = Instance.new("UICorner")
+local CloseButton = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local CurrentPage = Instance.new("TextLabel")
+local UICorner_29 = Instance.new("UICorner")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local OpenButton = Instance.new("TextButton")
-local UICorner_27 = Instance.new("UICorner")
+local UICorner_30 = Instance.new("UICorner")
 
 -- Properties
 
@@ -182,8 +191,24 @@ ESP.TextWrapped = true
 UICorner_5.Parent = ESP
 UICorner_5.CornerRadius = UDim.new(0, 5)
 
-UICorner_6.Parent = PagesFrame
+Settings.Name = "Settings"
+Settings.Parent = Pages
+Settings.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Settings.BorderColor3 = Color3.new(0, 0, 0)
+Settings.BorderSizePixel = 0
+Settings.Size = UDim2.new(1, 0, 0.0500000007, 0)
+Settings.Font = Enum.Font.Arial
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.new(1, 1, 1)
+Settings.TextScaled = true
+Settings.TextSize = 14
+Settings.TextWrapped = true
+
+UICorner_6.Parent = Settings
 UICorner_6.CornerRadius = UDim.new(0, 5)
+
+UICorner_7.Parent = PagesFrame
+UICorner_7.CornerRadius = UDim.new(0, 5)
 
 FeaturesFrame.Name = "FeaturesFrame"
 FeaturesFrame.Parent = MainFrame
@@ -193,8 +218,8 @@ FeaturesFrame.BorderSizePixel = 0
 FeaturesFrame.Position = UDim2.new(0.28738904, 0, 0.120564774, 0)
 FeaturesFrame.Size = UDim2.new(0.701231897, 0, 0.86664325, 0)
 
-UICorner_7.Parent = FeaturesFrame
-UICorner_7.CornerRadius = UDim.new(0, 5)
+UICorner_8.Parent = FeaturesFrame
+UICorner_8.CornerRadius = UDim.new(0, 5)
 
 Home_2.Name = "Home"
 Home_2.Parent = FeaturesFrame
@@ -218,8 +243,8 @@ Creator.BorderColor3 = Color3.new(0, 0, 0)
 Creator.BorderSizePixel = 0
 Creator.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_8.Parent = Creator
-UICorner_8.CornerRadius = UDim.new(0, 5)
+UICorner_9.Parent = Creator
+UICorner_9.CornerRadius = UDim.new(0, 5)
 
 Text.Name = "Text"
 Text.Parent = Creator
@@ -230,7 +255,7 @@ Text.BorderSizePixel = 0
 Text.Position = UDim2.new(0.0115649207, 0, 0.13554503, 0)
 Text.Size = UDim2.new(0.974942684, 0, 0.728910148, 0)
 Text.Font = Enum.Font.Arial
-Text.Text = "Made by: Bastian0z"
+Text.Text = "Enjoy the script!"
 Text.TextColor3 = Color3.new(1, 1, 1)
 Text.TextScaled = true
 Text.TextSize = 14
@@ -259,8 +284,8 @@ SuperSpeed.BorderColor3 = Color3.new(0, 0, 0)
 SuperSpeed.BorderSizePixel = 0
 SuperSpeed.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_9.Parent = SuperSpeed
-UICorner_9.CornerRadius = UDim.new(0, 5)
+UICorner_10.Parent = SuperSpeed
+UICorner_10.CornerRadius = UDim.new(0, 5)
 
 Text_2.Name = "Text"
 Text_2.Parent = SuperSpeed
@@ -292,8 +317,8 @@ Activate.TextScaled = true
 Activate.TextSize = 14
 Activate.TextWrapped = true
 
-UICorner_10.Parent = Activate
-UICorner_10.CornerRadius = UDim.new(0, 5)
+UICorner_11.Parent = Activate
+UICorner_11.CornerRadius = UDim.new(0, 5)
 
 SuperJump.Name = "SuperJump"
 SuperJump.Parent = Main_2
@@ -302,8 +327,8 @@ SuperJump.BorderColor3 = Color3.new(0, 0, 0)
 SuperJump.BorderSizePixel = 0
 SuperJump.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_11.Parent = SuperJump
-UICorner_11.CornerRadius = UDim.new(0, 5)
+UICorner_12.Parent = SuperJump
+UICorner_12.CornerRadius = UDim.new(0, 5)
 
 Text_3.Name = "Text"
 Text_3.Parent = SuperJump
@@ -335,8 +360,8 @@ Activate_2.TextScaled = true
 Activate_2.TextSize = 14
 Activate_2.TextWrapped = true
 
-UICorner_12.Parent = Activate_2
-UICorner_12.CornerRadius = UDim.new(0, 5)
+UICorner_13.Parent = Activate_2
+UICorner_13.CornerRadius = UDim.new(0, 5)
 
 AntiSlow.Name = "AntiSlow"
 AntiSlow.Parent = Main_2
@@ -345,8 +370,8 @@ AntiSlow.BorderColor3 = Color3.new(0, 0, 0)
 AntiSlow.BorderSizePixel = 0
 AntiSlow.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_13.Parent = AntiSlow
-UICorner_13.CornerRadius = UDim.new(0, 5)
+UICorner_14.Parent = AntiSlow
+UICorner_14.CornerRadius = UDim.new(0, 5)
 
 Text_4.Name = "Text"
 Text_4.Parent = AntiSlow
@@ -378,8 +403,8 @@ Activate_3.TextScaled = true
 Activate_3.TextSize = 14
 Activate_3.TextWrapped = true
 
-UICorner_14.Parent = Activate_3
-UICorner_14.CornerRadius = UDim.new(0, 5)
+UICorner_15.Parent = Activate_3
+UICorner_15.CornerRadius = UDim.new(0, 5)
 
 Target_2.Name = "Target"
 Target_2.Parent = FeaturesFrame
@@ -404,8 +429,8 @@ TargetName.BorderColor3 = Color3.new(0, 0, 0)
 TargetName.BorderSizePixel = 0
 TargetName.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_15.Parent = TargetName
-UICorner_15.CornerRadius = UDim.new(0, 5)
+UICorner_16.Parent = TargetName
+UICorner_16.CornerRadius = UDim.new(0, 5)
 
 TextBox.Parent = TargetName
 TextBox.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
@@ -422,8 +447,8 @@ TextBox.TextScaled = true
 TextBox.TextSize = 14
 TextBox.TextWrapped = true
 
-UICorner_16.Parent = TextBox
-UICorner_16.CornerRadius = UDim.new(0, 5)
+UICorner_17.Parent = TextBox
+UICorner_17.CornerRadius = UDim.new(0, 5)
 
 TeleportTo.Name = "TeleportTo"
 TeleportTo.Parent = Target_2
@@ -432,8 +457,8 @@ TeleportTo.BorderColor3 = Color3.new(0, 0, 0)
 TeleportTo.BorderSizePixel = 0
 TeleportTo.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_17.Parent = TeleportTo
-UICorner_17.CornerRadius = UDim.new(0, 5)
+UICorner_18.Parent = TeleportTo
+UICorner_18.CornerRadius = UDim.new(0, 5)
 
 Text_5.Name = "Text"
 Text_5.Parent = TeleportTo
@@ -465,8 +490,8 @@ Activate_4.TextScaled = true
 Activate_4.TextSize = 14
 Activate_4.TextWrapped = true
 
-UICorner_18.Parent = Activate_4
-UICorner_18.CornerRadius = UDim.new(0, 5)
+UICorner_19.Parent = Activate_4
+UICorner_19.CornerRadius = UDim.new(0, 5)
 
 HeadSit.Name = "HeadSit"
 HeadSit.Parent = Target_2
@@ -475,8 +500,8 @@ HeadSit.BorderColor3 = Color3.new(0, 0, 0)
 HeadSit.BorderSizePixel = 0
 HeadSit.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_19.Parent = HeadSit
-UICorner_19.CornerRadius = UDim.new(0, 5)
+UICorner_20.Parent = HeadSit
+UICorner_20.CornerRadius = UDim.new(0, 5)
 
 Text_6.Name = "Text"
 Text_6.Parent = HeadSit
@@ -508,8 +533,8 @@ Activate_5.TextScaled = true
 Activate_5.TextSize = 14
 Activate_5.TextWrapped = true
 
-UICorner_20.Parent = Activate_5
-UICorner_20.CornerRadius = UDim.new(0, 5)
+UICorner_21.Parent = Activate_5
+UICorner_21.CornerRadius = UDim.new(0, 5)
 
 ESP_2.Name = "ESP"
 ESP_2.Parent = FeaturesFrame
@@ -534,8 +559,8 @@ ESP_3.BorderColor3 = Color3.new(0, 0, 0)
 ESP_3.BorderSizePixel = 0
 ESP_3.Size = UDim2.new(1, 0, 0.0500000007, 0)
 
-UICorner_21.Parent = ESP_3
-UICorner_21.CornerRadius = UDim.new(0, 5)
+UICorner_22.Parent = ESP_3
+UICorner_22.CornerRadius = UDim.new(0, 5)
 
 Text_7.Name = "Text"
 Text_7.Parent = ESP_3
@@ -567,8 +592,67 @@ Activate_6.TextScaled = true
 Activate_6.TextSize = 14
 Activate_6.TextWrapped = true
 
-UICorner_22.Parent = Activate_6
-UICorner_22.CornerRadius = UDim.new(0, 5)
+UICorner_23.Parent = Activate_6
+UICorner_23.CornerRadius = UDim.new(0, 5)
+
+Settings_2.Name = "Settings"
+Settings_2.Parent = FeaturesFrame
+Settings_2.Active = true
+Settings_2.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Settings_2.BackgroundTransparency = 1
+Settings_2.BorderColor3 = Color3.new(0, 0, 0)
+Settings_2.BorderSizePixel = 0
+Settings_2.Position = UDim2.new(0.0121550355, 0, 0.0126518589, 0)
+Settings_2.Size = UDim2.new(0.976191342, 0, 0.974696279, 0)
+Settings_2.Visible = false
+Settings_2.ScrollBarThickness = 0
+
+UIListLayout_6.Parent = Settings_2
+UIListLayout_6.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_6.Padding = UDim.new(0, 5)
+
+Notifications.Name = "Notifications"
+Notifications.Parent = Settings_2
+Notifications.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Notifications.BorderColor3 = Color3.new(0, 0, 0)
+Notifications.BorderSizePixel = 0
+Notifications.Size = UDim2.new(1, 0, 0.0500000007, 0)
+
+UICorner_24.Parent = Notifications
+UICorner_24.CornerRadius = UDim.new(0, 5)
+
+Text_8.Name = "Text"
+Text_8.Parent = Notifications
+Text_8.BackgroundColor3 = Color3.new(1, 1, 1)
+Text_8.BackgroundTransparency = 1
+Text_8.BorderColor3 = Color3.new(0, 0, 0)
+Text_8.BorderSizePixel = 0
+Text_8.Position = UDim2.new(0.0115649207, 0, 0.13554503, 0)
+Text_8.Size = UDim2.new(0.974942684, 0, 0.728910148, 0)
+Text_8.Font = Enum.Font.Arial
+Text_8.Text = "Notifications"
+Text_8.TextColor3 = Color3.new(1, 1, 1)
+Text_8.TextScaled = true
+Text_8.TextSize = 14
+Text_8.TextWrapped = true
+Text_8.TextXAlignment = Enum.TextXAlignment.Left
+
+Activate_7.Name = "Activate"
+Activate_7.Parent = Notifications
+Activate_7.BackgroundColor3 = Color3.new(0.470588, 0.470588, 0.470588)
+Activate_7.BorderColor3 = Color3.new(0, 0, 0)
+Activate_7.BorderSizePixel = 0
+Activate_7.Position = UDim2.new(0.919846356, 0, 0.136000142, 0)
+Activate_7.Size = UDim2.new(0.0671535805, 0, 0.728999972, 0)
+Activate_7.Font = Enum.Font.SourceSans
+Activate_7.Text = ""
+Activate_7.TextColor3 = Color3.new(0, 0, 0)
+Activate_7.TextScaled = true
+Activate_7.TextSize = 14
+Activate_7.TextWrapped = true
+
+UICorner_25.Parent = Activate_7
+UICorner_25.CornerRadius = UDim.new(0, 5)
 
 TitleFrame.Name = "TitleFrame"
 TitleFrame.Parent = MainFrame
@@ -578,8 +662,8 @@ TitleFrame.BorderSizePixel = 0
 TitleFrame.Position = UDim2.new(0.00766877318, 0, 0.0127458936, 0)
 TitleFrame.Size = UDim2.new(0.980952203, 0, 0.0949868783, 0)
 
-UICorner_23.Parent = TitleFrame
-UICorner_23.CornerRadius = UDim.new(0, 5)
+UICorner_26.Parent = TitleFrame
+UICorner_26.CornerRadius = UDim.new(0, 5)
 
 Title.Name = "Title"
 Title.Parent = TitleFrame
@@ -596,8 +680,8 @@ Title.TextSize = 14
 Title.TextWrapped = true
 Title.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_24.Parent = Title
-UICorner_24.CornerRadius = UDim.new(0, 5)
+UICorner_27.Parent = Title
+UICorner_27.CornerRadius = UDim.new(0, 5)
 
 CloseButton.Name = "CloseButton"
 CloseButton.Parent = TitleFrame
@@ -613,8 +697,8 @@ CloseButton.TextScaled = true
 CloseButton.TextSize = 14
 CloseButton.TextWrapped = true
 
-UICorner_25.Parent = CloseButton
-UICorner_25.CornerRadius = UDim.new(0, 5)
+UICorner_28.Parent = CloseButton
+UICorner_28.CornerRadius = UDim.new(0, 5)
 
 CurrentPage.Name = "CurrentPage"
 CurrentPage.Parent = TitleFrame
@@ -622,7 +706,7 @@ CurrentPage.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
 CurrentPage.BorderColor3 = Color3.new(0, 0, 0)
 CurrentPage.BorderSizePixel = 0
 CurrentPage.Position = UDim2.new(0.391741246, 0, 0.394255966, 0)
-CurrentPage.Size = UDim2.new(0.0999781713, 0, 0.58648479, 0)
+CurrentPage.Size = UDim2.new(0.156575963, 0, 0.58648479, 0)
 CurrentPage.Font = Enum.Font.Arial
 CurrentPage.Text = "Home"
 CurrentPage.TextColor3 = Color3.new(1, 1, 1)
@@ -631,8 +715,8 @@ CurrentPage.TextSize = 14
 CurrentPage.TextWrapped = true
 CurrentPage.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_26.Parent = CurrentPage
-UICorner_26.CornerRadius = UDim.new(0, 5)
+UICorner_29.Parent = CurrentPage
+UICorner_29.CornerRadius = UDim.new(0, 5)
 
 UIAspectRatioConstraint.Parent = MainFrame
 UIAspectRatioConstraint.AspectRatio = 1.383912205696106
@@ -653,11 +737,11 @@ OpenButton.TextScaled = true
 OpenButton.TextSize = 14
 OpenButton.TextWrapped = true
 
-UICorner_27.Parent = OpenButton
+UICorner_30.Parent = OpenButton
 
 -- Scripts
 
-local function VZPMQWE_fake_script() -- DaHoodGui.MainScript 
+local function RWVZE_fake_script() -- DaHoodGui.MainScript 
 	local script = Instance.new('LocalScript', DaHoodGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -682,10 +766,25 @@ local function VZPMQWE_fake_script() -- DaHoodGui.MainScript
 	
 	game.StarterGui:SetCore("SendNotification", {
 		Title = "Welcome!",
-		Text = "Welcome to Da Hood Script! (Still in beta.)",
+		Text = "Welcome to Da Hood Script! (Still in development.)",
 		Duration = 10,
 		Button1 = "Okay"
 	})
+	
+	local function Check(Char)
+		for i,v in pairs(Char:GetDescendants()) do
+			if v.Name == "LocalScript" and v.Parent.Parent == Char then
+				v:Destroy()
+			end
+		end
+	end
+	
+	Check(game.Players.LocalPlayer.Character)
+	
+	game.Players.LocalPlayer.CharacterAdded:Connect(function(Char)
+		Char:WaitForChild("Humanoid")
+		Check(Char)
+	end)
 	
 	MainFrame.Position = UDim2.fromScale(0.5, 0.5)
 	MainFrame.Size = UDim2.fromScale(0, 0)
@@ -700,10 +799,13 @@ local function VZPMQWE_fake_script() -- DaHoodGui.MainScript
 			SuperSpeed = false,
 			SuperJump = false,
 			HeadSit = false,
-			AntiSlow = false
+			AntiSlow = false,
 		},
 		["Visuals"] = {
 			ESP = false
+		},
+		["Notifications"] = {
+			Show = true
 		}
 	}
 	
@@ -772,24 +874,28 @@ local function VZPMQWE_fake_script() -- DaHoodGui.MainScript
 								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(120, 120, 120) }):Play()
 								script.Click:Play()
 	
+								if ButtonsActivated.Notifications.Show == true then
 								game.StarterGui:SetCore("SendNotification", {
 									Title = "Activated",
 									Text = "Super Speed activated",
 									Duration = 10,
 									Button1 = "Okay"
-								})
+									})
+									end
 							else
 								game.Players.LocalPlayer.Character.BodyEffects.Movement:FindFirstChild("SuperSpeed"):Destroy()
 								ButtonsActivated.Character.SuperSpeed = false
 								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(40, 40, 40) }):Play()
 								script.Click:Play()
 	
+								if ButtonsActivated.Notifications.Show == true then
 								game.StarterGui:SetCore("SendNotification", {
 									Title = "Disabled",
 									Text = "Super Speed disabled",
 									Duration = 10,
 									Button1 = "Okay"
-								})
+									})
+									end
 							end
 						end)
 					elseif PageFrame.Name == "SuperJump" then
@@ -800,24 +906,28 @@ local function VZPMQWE_fake_script() -- DaHoodGui.MainScript
 								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(120, 120, 120) }):Play()
 								script.Click:Play()
 	
+								if ButtonsActivated.Notifications.Show == true then
 								game.StarterGui:SetCore("SendNotification", {
 									Title = "Activated",
 									Text = "Super Jump activated",
 									Duration = 10,
 									Button1 = "Okay"
-								})
+									})
+									end
 							else
 								game.Players.LocalPlayer.Character.BodyEffects.Movement:FindFirstChild("HighJump"):Destroy()
 								ButtonsActivated.Character.SuperJump = false
 								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(40, 40, 40) }):Play()
 								script.Click:Play()
 	
+								if ButtonsActivated.Notifications.Show == true then
 								game.StarterGui:SetCore("SendNotification", {
 									Title = "Disabled",
 									Text = "Super Jump disabled",
 									Duration = 10,
 									Button1 = "Okay"
-								})
+									})
+									end
 							end
 						end)
 					elseif PageFrame.Name == "TeleportTo" then
@@ -826,12 +936,14 @@ local function VZPMQWE_fake_script() -- DaHoodGui.MainScript
 								game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
 								script.Click:Play()
 	
+								if ButtonsActivated.Notifications.Show == true then
 								game.StarterGui:SetCore("SendNotification", {
 									Title = "Teleported",
 									Text = "Teleported to target",
 									Duration = 10,
 									Button1 = "Okay"
-								})
+									})
+									end
 							end
 						end)
 					elseif PageFrame.Name == "TargetName" then
@@ -841,29 +953,35 @@ local function VZPMQWE_fake_script() -- DaHoodGui.MainScript
 									Target = plr
 									PageFrame.TextBox.Text = plr.Name
 	
+									if ButtonsActivated.Notifications.Show == true then
 									game.StarterGui:SetCore("SendNotification", {
 										Title = "Target set",
 										Text = "Set target to: ".. plr.Name,
 										Duration = 10,
 										Button1 = "Okay"
-									})
+										})
+										end
 								elseif string.find(plr.DisplayName, PageFrame.TextBox.Text) then
 									Target = plr
 									PageFrame.TextBox.Text = plr.DisplayName
 	
+									if ButtonsActivated.Notifications.Show == true then
 									game.StarterGui:SetCore("SendNotification", {
 										Title = "Target set",
 										Text = "Set target to: ".. plr.DisplayName,
 										Duration = 10,
 										Button1 = "Okay"
-									})
+										})
+										end
 								else
+									if ButtonsActivated.Notifications.Show == true then
 									game.StarterGui:SetCore("SendNotification", {
 										Title = "Target set failed",
 										Text = "Failed to set target, try entering username again!",
 										Duration = 10,
 										Button1 = "Okay"
-									})
+										})
+										end
 								end
 							end
 						end)
@@ -875,24 +993,28 @@ local function VZPMQWE_fake_script() -- DaHoodGui.MainScript
 									TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(120, 120, 120) }):Play()
 									script.Click:Play()
 	
+									if ButtonsActivated.Notifications.Show == true then
 									game.StarterGui:SetCore("SendNotification", {
 										Title = "Activated",
 										Text = "HeadSit activated",
 										Duration = 10,
 										Button1 = "Okay"
-									})
+										})
+										end
 								end
 							else
 								ButtonsActivated.Character.HeadSit = false
 								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(40, 40, 40) }):Play()
 								script.Click:Play()
 	
+								if ButtonsActivated.Notifications.Show == true then
 								game.StarterGui:SetCore("SendNotification", {
 									Title = "Disabled",
 									Text = "HeadSit disabled",
 									Duration = 10,
 									Button1 = "Okay"
-								})
+									})
+									end
 							end
 						end)
 					elseif PageFrame.Name == "AntiSlow" then
@@ -902,23 +1024,27 @@ local function VZPMQWE_fake_script() -- DaHoodGui.MainScript
 								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(120, 120, 120) }):Play()
 								script.Click:Play()
 	
+								if ButtonsActivated.Notifications.Show == true then
 								game.StarterGui:SetCore("SendNotification", {
 									Title = "Activated",
 									Text = "Anti-Slow activated",
 									Duration = 10,
 									Button1 = "Okay"
-								})
+									})
+									end
 							else
 								ButtonsActivated.Character.AntiSlow = false
 								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(40, 40, 40) }):Play()
 								script.Click:Play()
 	
+								if ButtonsActivated.Notifications.Show == true then
 								game.StarterGui:SetCore("SendNotification", {
 									Title = "Disabled",
 									Text = "Anti-Slow disabled",
 									Duration = 10,
 									Button1 = "Okay"
-								})
+									})
+									end
 							end
 						end)
 					elseif PageFrame.Name == "ESP" then
@@ -928,20 +1054,50 @@ local function VZPMQWE_fake_script() -- DaHoodGui.MainScript
 								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(120, 120, 120) }):Play()
 								script.Click:Play()
 	
+								if ButtonsActivated.Notifications.Show == true then
 								game.StarterGui:SetCore("SendNotification", {
 									Title = "Activated",
 									Text = "ESP activated",
 									Duration = 10,
 									Button1 = "Okay"
-								})
+									})
+									end
 							else
 								ButtonsActivated.Visuals.ESP = false
 								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(40, 40, 40) }):Play()
 								script.Click:Play()
 	
+								if ButtonsActivated.Notifications.Show == true then
 								game.StarterGui:SetCore("SendNotification", {
 									Title = "Disabled",
 									Text = "ESP disabled",
+									Duration = 10,
+									Button1 = "Okay"
+									})
+									end
+							end
+						end)
+					elseif PageFrame.Name == "Notifications" then
+						PageFrame:WaitForChild("Activate").MouseButton1Click:Connect(function()
+							if ButtonsActivated.Notifications.Show == false then
+								ButtonsActivated.Notifications.Show = true
+								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(120, 120, 120) }):Play()
+								script.Click:Play()
+	
+								game.StarterGui:SetCore("SendNotification", {
+									Title = "Activated",
+									Text = "Notifications enabled",
+									Duration = 10,
+									Button1 = "Okay"
+								})
+							else
+								ButtonsActivated.Notifications.Show = false
+								TweenService:Create(PageFrame.Activate, TweenInfo.new(0.25), { BackgroundColor3 = Color3.fromRGB(40, 40, 40) }):Play()
+								script.Click:Play()
+	
+								game.StarterGui:SetCore("SendNotification", {
+									Title = "Disabled",
+									Text = "Notifications disabled",
 									Duration = 10,
 									Button1 = "Okay"
 								})
@@ -1035,13 +1191,15 @@ local function VZPMQWE_fake_script() -- DaHoodGui.MainScript
 		if plr == Target then
 			Target = nil
 			
-			game.StarterGui:SetCore("SendNotification", {
-				Title = "Target left",
-				Text = "Targetted player has left the server",
-				Duration = 10,
-				Button1 = "Okay"
-			})
+			if ButtonsActivated.Notifications.Show == true then
+				game.StarterGui:SetCore("SendNotification", {
+					Title = "Target left",
+					Text = "Targetted player has left the server",
+					Duration = 10,
+					Button1 = "Okay"
+				})
+			end
 		end
 	end)
 end
-coroutine.wrap(VZPMQWE_fake_script)()
+coroutine.wrap(RWVZE_fake_script)()
